@@ -1,0 +1,40 @@
+Mono-ruby for individual base characters in Japanese
+desc: One or more hiragana or katakana characters (the ruby annotation) are placed with each ideographic character (the base text). This is used to provide readings of kanji characters.
+1: <ruby>B<rt>annotation</ruby>
+2: <ruby>君<rt>くん</ruby><ruby>子<rt>し</ruby>は<ruby>和<rt>わ</ruby>して<ruby>同<rt>どう</ruby>ぜず。
+3: <ruby>君<rt>くん</rt>子<rt>し</ruby>は<ruby>和<rt>わ</ruby>して<ruby>同<rt>どう</ruby>ぜず。
+
+Mono-ruby for compound words (jukugo)
+desc: This is similar to the previous case: each ideographic character in the compound word (the base text) has its reading given in hiragana or katakana characters (the ruby annotation). The difference is that the base text segments form a compound word rather than being separate from each other.
+1: <ruby>B<rt>annotation</rt>B<rt>annotation</ruby>
+2: <ruby>鬼<rt>き</rt>門<rt>もん</rt></ruby>の<ruby>方<rt>ほう</rt>角<rt>がく</rt></ruby>を<ruby>凝<rt>ぎょう</rt>視<rt>し</rt></ruby>する
+
+Jukugo-ruby
+desc: This is semantically identical to the previous case (each individual ideographic character in the base compound word has its reading given in an annotation in hiragana or katakana characters), but the rendering is the more complicated Jukugo Ruby rendering.	
+1: <ruby>鬼<rt>き</rt>門<rt>もん</rt></ruby>の<ruby>方<rt>ほう</rt>角<rt>がく</rt></ruby>を<ruby>凝<rt>ぎょう</rt>視<rt>し</rt></ruby>する
+
+Group ruby for describing meanings
+desc: The annotation describes the meaning of the base text, rather than (or in addition to) the pronunciation. As such, both the base text and the annotation can be multiple characters long.
+1: <ruby>BASE<rt>annotation</ruby>
+2: <ruby>境界面<rt>インターフェース</ruby>
+3: <ruby lang="ja">編集者<rt lang="en">editor</ruby>
+
+Group ruby for Jukuji readings
+desc: A phonetic reading that corresponds to multiple base characters, because a one-to-one mapping would be difficult. (In English, the words "Colonel" and "Lieutenant" are examples of words where a direct mapping of pronunciation to individual letters is, in some dialects, rather unclear.)
+1: <ruby>紫陽花<rt>あじさい</ruby>
+
+Text with both phonetic and semantic annotations (double-sided ruby)
+desc: Sometimes, ruby styles described above are combined. If this results in two annotations covering the same single base segment, then the annotations can just be placed back to back.
+1: <ruby>BASE<rt>annotation 1<rt>annotation 2</ruby>
+2: <ruby>B<rt>a<rt>a</ruby><ruby>A<rt>a<rt>a</ruby><ruby>S<rt>a<rt>a</ruby><ruby>E<rt>a<rt>a</ruby>
+3: <ruby> ♥ <rt> Heart <rt lang=fr> Cœur </rt> ☘ <rt> Shamrock <rt lang=fr> Trèfle </rt> ✶ <rt> Star <rt lang=fr> Étoile </rt></ruby>
+4: <ruby><ruby>B<rt>a</rt>A<rt>n</rt>S<rt>t</rt>E<rt>n</rt></ruby><rt>annotation</ruby>
+5: <ruby><ruby>東<rt>とう</rt>南<rt>なん</rt></ruby><rt>たつみ</rt></ruby>の方角
+6: <ruby><ruby>東<rt>とう</rt>南<rt>なん</rt></ruby><rt lang=en>Southeast</rt></ruby>の方角
+
+Misc
+desc: Other examples in the WhatWG document
+1: <ruby>漢<rt>かん</rt>字<rt>じ</rt></ruby>
+2: <ruby>漢<rt>ㄏㄢˋ</rt>字<rt>ㄗˋ</rt></ruby>
+3: <p>...<ruby>汉<rt>hàn</rt>字<rt>zì</rt></ruby>...</p>
+4: <ruby><ruby>HT<rt>Hypertext</rt>M<rt>Markup</rt>L<rt>Language</rt></ruby><rt>An abstract language for describing documents and applications</ruby>
