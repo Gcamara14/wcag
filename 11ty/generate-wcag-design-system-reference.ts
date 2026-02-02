@@ -471,6 +471,7 @@ async function main() {
     const brief = briefs[i];
     const meta = getScMeta(sc.id);
     const sourceUrl = `${GITHUB_BASE}/${sc.version}/${sc.id}.html`;
+    const understandingUrl = `https://github.com/w3c/wcag/blob/main/understanding/${sc.version}/${sc.id}.html`;
 
     lines.push(`## ${sc.num} ${sc.name}`);
     lines.push("");
@@ -479,6 +480,7 @@ async function main() {
     for (const b of meta.designSystem) lines.push(`  - ${b}`);
     lines.push("- **Common component impacts:** " + meta.componentImpacts.join(", "));
     lines.push(`- **Source:** [guidelines/sc/${sc.version}/${sc.id}.html](${sourceUrl})`);
+    lines.push(`- **Understanding:** [understanding/${sc.version}/${sc.id}.html](${understandingUrl})`);
     lines.push("");
   }
 

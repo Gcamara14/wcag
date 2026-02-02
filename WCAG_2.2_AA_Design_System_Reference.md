@@ -10,6 +10,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Provide default accessible names for icon-only buttons and controls.
 - **Common component impacts:** Buttons, Icons, Images, Decorative images
 - **Source:** [guidelines/sc/20/non-text-content.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/non-text-content.html)
+- **Understanding:** [understanding/20/non-text-content.html](https://github.com/w3c/wcag/blob/main/understanding/20/non-text-content.html)
 
 ## 1.2.1 Audio-only and Video-only (Prerecorded)
 
@@ -18,6 +19,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - If components embed media, ensure text/transcript alternatives are supported.
 - **Common component impacts:** Media players, Audio/video embeds
 - **Source:** [guidelines/sc/20/audio-only-and-video-only-prerecorded.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/audio-only-and-video-only-prerecorded.html)
+- **Understanding:** [understanding/20/audio-only-and-video-only-prerecorded.html](https://github.com/w3c/wcag/blob/main/understanding/20/audio-only-and-video-only-prerecorded.html)
 
 ## 1.2.2 Captions (Prerecorded)
 
@@ -26,6 +28,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Media components must support captions or document caption requirements.
 - **Common component impacts:** Video player, Synchronized media
 - **Source:** [guidelines/sc/20/captions-prerecorded.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/captions-prerecorded.html)
+- **Understanding:** [understanding/20/captions-prerecorded.html](https://github.com/w3c/wcag/blob/main/understanding/20/captions-prerecorded.html)
 
 ## 1.2.3 Audio Description or Media Alternative (Prerecorded)
 
@@ -34,6 +37,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Document need for audio description or full-text alternative for video.
 - **Common component impacts:** Video player, Synchronized media
 - **Source:** [guidelines/sc/20/audio-description-or-media-alternative-prerecorded.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/audio-description-or-media-alternative-prerecorded.html)
+- **Understanding:** [understanding/20/audio-description-or-media-alternative-prerecorded.html](https://github.com/w3c/wcag/blob/main/understanding/20/audio-description-or-media-alternative-prerecorded.html)
 
 ## 1.2.4 Captions (Live)
 
@@ -42,6 +46,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Live media components should support real-time captions.
 - **Common component impacts:** Live stream player, Webinar/meeting UI
 - **Source:** [guidelines/sc/20/captions-live.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/captions-live.html)
+- **Understanding:** [understanding/20/captions-live.html](https://github.com/w3c/wcag/blob/main/understanding/20/captions-live.html)
 
 ## 1.2.5 Audio Description (Prerecorded)
 
@@ -50,6 +55,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Video components should support audio description or extended description.
 - **Common component impacts:** Video player
 - **Source:** [guidelines/sc/20/audio-description-prerecorded.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/audio-description-prerecorded.html)
+- **Understanding:** [understanding/20/audio-description-prerecorded.html](https://github.com/w3c/wcag/blob/main/understanding/20/audio-description-prerecorded.html)
 
 ## 1.3.1 Info and Relationships
 
@@ -59,6 +65,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Document heading levels, list types, form associations in design tokens.
 - **Common component impacts:** Forms, Headings, Tables, Lists, Labels
 - **Source:** [guidelines/sc/20/info-and-relationships.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/info-and-relationships.html)
+- **Understanding:** [understanding/20/info-and-relationships.html](https://github.com/w3c/wcag/blob/main/understanding/20/info-and-relationships.html)
 
 ## 1.3.2 Meaningful Sequence
 
@@ -67,6 +74,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - DOM order must match visual order; avoid order-dependent layout only.
 - **Common component impacts:** Layouts, Grids, Reading order
 - **Source:** [guidelines/sc/20/meaningful-sequence.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/meaningful-sequence.html)
+- **Understanding:** [understanding/20/meaningful-sequence.html](https://github.com/w3c/wcag/blob/main/understanding/20/meaningful-sequence.html)
 
 ## 1.3.3 Sensory Characteristics
 
@@ -75,6 +83,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Don't rely only on shape, size, position, or sound for instructions.
 - **Common component impacts:** Forms, Instructions, Error messages
 - **Source:** [guidelines/sc/20/sensory-characteristics.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/sensory-characteristics.html)
+- **Understanding:** [understanding/20/sensory-characteristics.html](https://github.com/w3c/wcag/blob/main/understanding/20/sensory-characteristics.html)
 
 ## 1.3.4 Orientation
 
@@ -83,6 +92,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Support both portrait and landscape; don't lock to one orientation.
 - **Common component impacts:** Layouts, Modals, Full-screen views
 - **Source:** [guidelines/sc/21/orientation.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/orientation.html)
+- **Understanding:** [understanding/21/orientation.html](https://github.com/w3c/wcag/blob/main/understanding/21/orientation.html)
 
 ## 1.3.5 Identify Input Purpose
 
@@ -91,6 +101,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Document autocomplete values for form fields; use correct input types.
 - **Common component impacts:** Forms, Inputs, Authentication flows
 - **Source:** [guidelines/sc/21/identify-input-purpose.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/identify-input-purpose.html)
+- **Understanding:** [understanding/21/identify-input-purpose.html](https://github.com/w3c/wcag/blob/main/understanding/21/identify-input-purpose.html)
 
 ## 1.4.1 Use of Color
 
@@ -99,6 +110,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Color must not be the only way to convey information; add icons or text.
 - **Common component impacts:** Buttons, Links, Status indicators, Charts
 - **Source:** [guidelines/sc/20/use-of-color.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/use-of-color.html)
+- **Understanding:** [understanding/20/use-of-color.html](https://github.com/w3c/wcag/blob/main/understanding/20/use-of-color.html)
 
 ## 1.4.2 Audio Control
 
@@ -107,6 +119,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Auto-playing audio must have a control to pause/stop; document in specs.
 - **Common component impacts:** Media player, Carousel, Notifications
 - **Source:** [guidelines/sc/20/audio-control.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/audio-control.html)
+- **Understanding:** [understanding/20/audio-control.html](https://github.com/w3c/wcag/blob/main/understanding/20/audio-control.html)
 
 ## 1.4.3 Contrast (Minimum)
 
@@ -115,6 +128,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Define and enforce minimum contrast in design tokens (4.5:1 text, 3:1 large).
 - **Common component impacts:** Typography, Buttons, Links, Form labels
 - **Source:** [guidelines/sc/20/contrast-minimum.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/contrast-minimum.html)
+- **Understanding:** [understanding/20/contrast-minimum.html](https://github.com/w3c/wcag/blob/main/understanding/20/contrast-minimum.html)
 
 ## 1.4.4 Resize Text
 
@@ -123,6 +137,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Use relative units and allow zoom; avoid fixed px for body text.
 - **Common component impacts:** Typography, Layouts, Modals
 - **Source:** [guidelines/sc/20/resize-text.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/resize-text.html)
+- **Understanding:** [understanding/20/resize-text.html](https://github.com/w3c/wcag/blob/main/understanding/20/resize-text.html)
 
 ## 1.4.5 Images of Text
 
@@ -131,6 +146,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Prefer real text over images of text; document when image-of-text is allowed.
 - **Common component impacts:** Headings, Logos, Decorative text
 - **Source:** [guidelines/sc/20/images-of-text.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/images-of-text.html)
+- **Understanding:** [understanding/20/images-of-text.html](https://github.com/w3c/wcag/blob/main/understanding/20/images-of-text.html)
 
 ## 1.4.10 Reflow
 
@@ -139,6 +155,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Layouts must reflow at 320px width without horizontal scroll; test at 400% zoom.
 - **Common component impacts:** Layouts, Modals, Tables, Focus states
 - **Source:** [guidelines/sc/21/reflow.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/reflow.html)
+- **Understanding:** [understanding/21/reflow.html](https://github.com/w3c/wcag/blob/main/understanding/21/reflow.html)
 
 ## 1.4.11 Non-text Contrast
 
@@ -147,6 +164,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - UI components and graphics must have 3:1 contrast against adjacent colors.
 - **Common component impacts:** Buttons, Form controls, Icons, Focus indicators
 - **Source:** [guidelines/sc/21/non-text-contrast.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/non-text-contrast.html)
+- **Understanding:** [understanding/21/non-text-contrast.html](https://github.com/w3c/wcag/blob/main/understanding/21/non-text-contrast.html)
 
 ## 1.4.12 Text Spacing
 
@@ -155,6 +173,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Don't prevent users from overriding line height, paragraph spacing, letter/word spacing.
 - **Common component impacts:** Typography, Cards, Blocks of text
 - **Source:** [guidelines/sc/21/text-spacing.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/text-spacing.html)
+- **Understanding:** [understanding/21/text-spacing.html](https://github.com/w3c/wcag/blob/main/understanding/21/text-spacing.html)
 
 ## 1.4.13 Content on Hover or Focus
 
@@ -163,6 +182,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Dismissable on blur; don't require hover; allow pointer users to move to content.
 - **Common component impacts:** Tooltips, Popovers, Dropdowns, Modals
 - **Source:** [guidelines/sc/21/content-on-hover-or-focus.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/content-on-hover-or-focus.html)
+- **Understanding:** [understanding/21/content-on-hover-or-focus.html](https://github.com/w3c/wcag/blob/main/understanding/21/content-on-hover-or-focus.html)
 
 ## 2.1.1 Keyboard
 
@@ -171,6 +191,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - All interactive components must be keyboard operable; document key behavior.
 - **Common component impacts:** Buttons, Links, Forms, Modals, Drag-and-drop
 - **Source:** [guidelines/sc/20/keyboard.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/keyboard.html)
+- **Understanding:** [understanding/20/keyboard.html](https://github.com/w3c/wcag/blob/main/understanding/20/keyboard.html)
 
 ## 2.1.2 No Keyboard Trap
 
@@ -179,6 +200,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Focus must be escapable (e.g. Tab) from modals, menus, and custom widgets.
 - **Common component impacts:** Modals, Dialogs, Menus, Lightboxes
 - **Source:** [guidelines/sc/20/no-keyboard-trap.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/no-keyboard-trap.html)
+- **Understanding:** [understanding/20/no-keyboard-trap.html](https://github.com/w3c/wcag/blob/main/understanding/20/no-keyboard-trap.html)
 
 ## 2.1.4 Character Key Shortcuts
 
@@ -187,6 +209,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Single-key shortcuts must be toggleable, remappable, or active only when focused.
 - **Common component impacts:** Editors, Data grids, Shortcut-driven UI
 - **Source:** [guidelines/sc/21/character-key-shortcuts.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/character-key-shortcuts.html)
+- **Understanding:** [understanding/21/character-key-shortcuts.html](https://github.com/w3c/wcag/blob/main/understanding/21/character-key-shortcuts.html)
 
 ## 2.2.1 Timing Adjustable
 
@@ -195,6 +218,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Time limits must be configurable or extendable; document in component specs.
 - **Common component impacts:** Forms, Session timeout, Carousel auto-advance
 - **Source:** [guidelines/sc/20/timing-adjustable.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/timing-adjustable.html)
+- **Understanding:** [understanding/20/timing-adjustable.html](https://github.com/w3c/wcag/blob/main/understanding/20/timing-adjustable.html)
 
 ## 2.2.2 Pause, Stop, Hide
 
@@ -203,6 +227,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Auto-updating content must be pausable, stoppable, or hideable.
 - **Common component impacts:** Carousels, Marquees, Live regions, Notifications
 - **Source:** [guidelines/sc/20/pause-stop-hide.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/pause-stop-hide.html)
+- **Understanding:** [understanding/20/pause-stop-hide.html](https://github.com/w3c/wcag/blob/main/understanding/20/pause-stop-hide.html)
 
 ## 2.3.1 Three Flashes or Below Threshold
 
@@ -211,6 +236,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Avoid content that flashes more than 3 times per second; document flash limits.
 - **Common component impacts:** Animations, Ads, Alerts
 - **Source:** [guidelines/sc/20/three-flashes-or-below-threshold.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/three-flashes-or-below-threshold.html)
+- **Understanding:** [understanding/20/three-flashes-or-below-threshold.html](https://github.com/w3c/wcag/blob/main/understanding/20/three-flashes-or-below-threshold.html)
 
 ## 2.4.1 Bypass Blocks
 
@@ -219,6 +245,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Provide skip links or landmarks so repeated blocks can be bypassed.
 - **Common component impacts:** Navigation, Page template, Headers
 - **Source:** [guidelines/sc/20/bypass-blocks.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/bypass-blocks.html)
+- **Understanding:** [understanding/20/bypass-blocks.html](https://github.com/w3c/wcag/blob/main/understanding/20/bypass-blocks.html)
 
 ## 2.4.2 Page Titled
 
@@ -227,6 +254,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Document page title pattern; ensure unique, descriptive titles.
 - **Common component impacts:** App shell, Page template
 - **Source:** [guidelines/sc/20/page-titled.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/page-titled.html)
+- **Understanding:** [understanding/20/page-titled.html](https://github.com/w3c/wcag/blob/main/understanding/20/page-titled.html)
 
 ## 2.4.3 Focus Order
 
@@ -235,6 +263,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Focus order must match visual order; avoid positive tabindex; document order.
 - **Common component impacts:** Modals, Forms, Layouts, Dynamic content
 - **Source:** [guidelines/sc/20/focus-order.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/focus-order.html)
+- **Understanding:** [understanding/20/focus-order.html](https://github.com/w3c/wcag/blob/main/understanding/20/focus-order.html)
 
 ## 2.4.4 Link Purpose (In Context)
 
@@ -243,6 +272,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Link text (or accessible name) must describe purpose; avoid "click here".
 - **Common component impacts:** Links, Cards, Buttons that navigate
 - **Source:** [guidelines/sc/20/link-purpose-in-context.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/link-purpose-in-context.html)
+- **Understanding:** [understanding/20/link-purpose-in-context.html](https://github.com/w3c/wcag/blob/main/understanding/20/link-purpose-in-context.html)
 
 ## 2.4.5 Multiple Ways
 
@@ -251,6 +281,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Sites should offer multiple ways to find content (nav, search, sitemap).
 - **Common component impacts:** Navigation, Search, Site structure
 - **Source:** [guidelines/sc/20/multiple-ways.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/multiple-ways.html)
+- **Understanding:** [understanding/20/multiple-ways.html](https://github.com/w3c/wcag/blob/main/understanding/20/multiple-ways.html)
 
 ## 2.4.6 Headings and Labels
 
@@ -259,6 +290,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Use descriptive headings and labels; document in content guidelines.
 - **Common component impacts:** Forms, Headings, Sections, Tables
 - **Source:** [guidelines/sc/20/headings-and-labels.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/headings-and-labels.html)
+- **Understanding:** [understanding/20/headings-and-labels.html](https://github.com/w3c/wcag/blob/main/understanding/20/headings-and-labels.html)
 
 ## 2.4.7 Focus Visible
 
@@ -267,6 +299,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Define visible focus indicator in design tokens; ensure 3:1 contrast and visibility.
 - **Common component impacts:** Buttons, Links, Form controls, Focus states
 - **Source:** [guidelines/sc/20/focus-visible.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/focus-visible.html)
+- **Understanding:** [understanding/20/focus-visible.html](https://github.com/w3c/wcag/blob/main/understanding/20/focus-visible.html)
 
 ## 2.4.11 Focus Not Obscured (Minimum)
 
@@ -275,6 +308,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Sticky/fixed UI must not fully cover focused component; use scroll-padding or layout.
 - **Common component impacts:** Modals, Sticky headers/footers, Focus states
 - **Source:** [guidelines/sc/22/focus-not-obscured-minimum.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/focus-not-obscured-minimum.html)
+- **Understanding:** [understanding/22/focus-not-obscured-minimum.html](https://github.com/w3c/wcag/blob/main/understanding/22/focus-not-obscured-minimum.html)
 
 ## 2.5.1 Pointer Gestures
 
@@ -283,6 +317,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Multi-point or path-based gestures must have single-pointer alternatives.
 - **Common component impacts:** Carousels, Drag-and-drop, Maps, Charts
 - **Source:** [guidelines/sc/21/pointer-gestures.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/pointer-gestures.html)
+- **Understanding:** [understanding/21/pointer-gestures.html](https://github.com/w3c/wcag/blob/main/understanding/21/pointer-gestures.html)
 
 ## 2.5.2 Pointer Cancellation
 
@@ -291,6 +326,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Activation on up-event (or allow cancel before commit); avoid down-event only.
 - **Common component impacts:** Buttons, Links, Drag-and-drop, Touch targets
 - **Source:** [guidelines/sc/21/pointer-cancellation.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/pointer-cancellation.html)
+- **Understanding:** [understanding/21/pointer-cancellation.html](https://github.com/w3c/wcag/blob/main/understanding/21/pointer-cancellation.html)
 
 ## 2.5.3 Label in Name
 
@@ -299,6 +335,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Visible label text must be included in the accessible name (e.g. aria-label, content).
 - **Common component impacts:** Buttons, Links, Form controls, Icon buttons
 - **Source:** [guidelines/sc/21/label-in-name.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/label-in-name.html)
+- **Understanding:** [understanding/21/label-in-name.html](https://github.com/w3c/wcag/blob/main/understanding/21/label-in-name.html)
 
 ## 2.5.4 Motion Actuation
 
@@ -307,6 +344,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Device motion (e.g. shake) must have a UI alternative.
 - **Common component impacts:** Motion-controlled features, Alternative controls
 - **Source:** [guidelines/sc/21/motion-actuation.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/motion-actuation.html)
+- **Understanding:** [understanding/21/motion-actuation.html](https://github.com/w3c/wcag/blob/main/understanding/21/motion-actuation.html)
 
 ## 2.5.7 Dragging Movements
 
@@ -315,6 +353,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Dragging must have a non-drag alternative (e.g. arrow keys, click to move).
 - **Common component impacts:** Drag-and-drop, Sliders, Reorderable lists
 - **Source:** [guidelines/sc/22/dragging-movements.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/dragging-movements.html)
+- **Understanding:** [understanding/22/dragging-movements.html](https://github.com/w3c/wcag/blob/main/understanding/22/dragging-movements.html)
 
 ## 2.5.8 Target Size (Minimum)
 
@@ -323,6 +362,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Touch targets at least 24×24 CSS pixels, or spaced so 24px circle doesn't overlap another.
 - **Common component impacts:** Buttons, Links, Form controls, Icon buttons
 - **Source:** [guidelines/sc/22/target-size-minimum.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/target-size-minimum.html)
+- **Understanding:** [understanding/22/target-size-minimum.html](https://github.com/w3c/wcag/blob/main/understanding/22/target-size-minimum.html)
 
 ## 3.1.1 Language of Page
 
@@ -331,6 +371,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Set lang on html; document in app shell.
 - **Common component impacts:** Page template, App shell
 - **Source:** [guidelines/sc/20/language-of-page.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/language-of-page.html)
+- **Understanding:** [understanding/20/language-of-page.html](https://github.com/w3c/wcag/blob/main/understanding/20/language-of-page.html)
 
 ## 3.1.2 Language of Parts
 
@@ -339,6 +380,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Use lang attribute on content in a different language.
 - **Common component impacts:** Typography, Content blocks, Quotes
 - **Source:** [guidelines/sc/20/language-of-parts.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/language-of-parts.html)
+- **Understanding:** [understanding/20/language-of-parts.html](https://github.com/w3c/wcag/blob/main/understanding/20/language-of-parts.html)
 
 ## 3.2.1 On Focus
 
@@ -347,6 +389,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Don't change context (e.g. submit, navigate) on focus alone.
 - **Common component impacts:** Forms, Links, Dropdowns
 - **Source:** [guidelines/sc/20/on-focus.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/on-focus.html)
+- **Understanding:** [understanding/20/on-focus.html](https://github.com/w3c/wcag/blob/main/understanding/20/on-focus.html)
 
 ## 3.2.2 On Input
 
@@ -355,6 +398,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Don't auto-submit or change context on input alone; use explicit submit.
 - **Common component impacts:** Forms, Selects, Search, Dropdowns
 - **Source:** [guidelines/sc/20/on-input.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/on-input.html)
+- **Understanding:** [understanding/20/on-input.html](https://github.com/w3c/wcag/blob/main/understanding/20/on-input.html)
 
 ## 3.2.3 Consistent Navigation
 
@@ -363,6 +407,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Repeated nav components should appear in the same order across pages.
 - **Common component impacts:** Navigation, Headers, Sidebars
 - **Source:** [guidelines/sc/20/consistent-navigation.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/consistent-navigation.html)
+- **Understanding:** [understanding/20/consistent-navigation.html](https://github.com/w3c/wcag/blob/main/understanding/20/consistent-navigation.html)
 
 ## 3.2.4 Consistent Identification
 
@@ -371,6 +416,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Same functionality should use same component/icon/label across the system.
 - **Common component impacts:** Buttons, Icons, Links, Components
 - **Source:** [guidelines/sc/20/consistent-identification.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/consistent-identification.html)
+- **Understanding:** [understanding/20/consistent-identification.html](https://github.com/w3c/wcag/blob/main/understanding/20/consistent-identification.html)
 
 ## 3.2.6 Consistent Help
 
@@ -379,6 +425,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - If help (contact, FAQ, etc.) appears on multiple pages, place it in the same relative order.
 - **Common component impacts:** Help link, Contact, Footer, Navigation
 - **Source:** [guidelines/sc/22/consistent-help.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/consistent-help.html)
+- **Understanding:** [understanding/22/consistent-help.html](https://github.com/w3c/wcag/blob/main/understanding/22/consistent-help.html)
 
 ## 3.3.1 Error Identification
 
@@ -387,6 +434,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Errors must be clearly identified and described; use programmatic association.
 - **Common component impacts:** Forms, Error messages, Validation
 - **Source:** [guidelines/sc/20/error-identification.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/error-identification.html)
+- **Understanding:** [understanding/20/error-identification.html](https://github.com/w3c/wcag/blob/main/understanding/20/error-identification.html)
 
 ## 3.3.2 Labels or Instructions
 
@@ -395,6 +443,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Provide labels or instructions for inputs; document in component docs.
 - **Common component impacts:** Forms, Inputs, Buttons, Required fields
 - **Source:** [guidelines/sc/20/labels-or-instructions.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/labels-or-instructions.html)
+- **Understanding:** [understanding/20/labels-or-instructions.html](https://github.com/w3c/wcag/blob/main/understanding/20/labels-or-instructions.html)
 
 ## 3.3.3 Error Suggestion
 
@@ -403,6 +452,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Where possible, suggest corrections for input errors.
 - **Common component impacts:** Forms, Validation, Error messages
 - **Source:** [guidelines/sc/20/error-suggestion.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/error-suggestion.html)
+- **Understanding:** [understanding/20/error-suggestion.html](https://github.com/w3c/wcag/blob/main/understanding/20/error-suggestion.html)
 
 ## 3.3.4 Error Prevention (Legal, Financial, Data)
 
@@ -411,6 +461,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Reversible submissions, confirmations, or review before commit for legal/financial actions.
 - **Common component impacts:** Forms, Checkout, Authentication, Modals
 - **Source:** [guidelines/sc/20/error-prevention-legal-financial-data.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/error-prevention-legal-financial-data.html)
+- **Understanding:** [understanding/20/error-prevention-legal-financial-data.html](https://github.com/w3c/wcag/blob/main/understanding/20/error-prevention-legal-financial-data.html)
 
 ## 3.3.7 Redundant Entry
 
@@ -419,6 +470,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Don't require re-entry of same info in the same process; autocomplete or reuse.
 - **Common component impacts:** Forms, Multi-step flows, Authentication
 - **Source:** [guidelines/sc/22/redundant-entry.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/redundant-entry.html)
+- **Understanding:** [understanding/22/redundant-entry.html](https://github.com/w3c/wcag/blob/main/understanding/22/redundant-entry.html)
 
 ## 3.3.8 Accessible Authentication (Minimum)
 
@@ -427,6 +479,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Cognitive function tests (e.g. puzzle, memorization) must have an alternative (e.g. object recognition, copy-paste from manager).
 - **Common component impacts:** Login, CAPTCHA, Authentication flows
 - **Source:** [guidelines/sc/22/accessible-authentication-minimum.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/22/accessible-authentication-minimum.html)
+- **Understanding:** [understanding/22/accessible-authentication-minimum.html](https://github.com/w3c/wcag/blob/main/understanding/22/accessible-authentication-minimum.html)
 
 ## 4.1.2 Name, Role, Value
 
@@ -435,6 +488,7 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - All UI components must have name and role; document in component API.
 - **Common component impacts:** Buttons, Forms, Custom widgets, Modals
 - **Source:** [guidelines/sc/20/name-role-value.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/20/name-role-value.html)
+- **Understanding:** [understanding/20/name-role-value.html](https://github.com/w3c/wcag/blob/main/understanding/20/name-role-value.html)
 
 ## 4.1.3 Status Messages
 
@@ -443,3 +497,4 @@ This document is intended to be uploaded into a custom GPT Knowledge section and
   - Use appropriate live regions (e.g. role=status, role=alert) for status updates.
 - **Common component impacts:** Toasts, Alerts, Form validation, Loading states
 - **Source:** [guidelines/sc/21/status-messages.html](https://github.com/w3c/wcag/blob/main/guidelines/sc/21/status-messages.html)
+- **Understanding:** [understanding/21/status-messages.html](https://github.com/w3c/wcag/blob/main/understanding/21/status-messages.html)
