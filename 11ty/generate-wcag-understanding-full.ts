@@ -138,6 +138,69 @@ function htmlToMarkdown(html: string): string {
   return processNode($('body')[0] || $.root()[0]).replace(/\n{3,}/g, '\n\n').trim();
 }
 
+// Helper to get techniques from the data file (simplified logic)
+import associatedTechniquesData from "../understanding/understanding.11tydata.js";
+
+// Mock data object for the 11ty data function
+const mockData = { understandingUrl: "" };
+const techniquesData = associatedTechniquesData(mockData).associatedTechniques;
+
+/**
+ * Format techniques section from data
+ */
+function formatTechniques(scId: string): string {
+  const scTechniques = techniquesData[scId];
+  if (!scTechniques) return "";
+
+  let output = "";
+
+  if (scTechniques.sufficient) {
+    output += "\n#### Sufficient Techniques\n\n";
+    output += formatTechniqueList(scTechniques.sufficient);
+  }
+
+  if (scTechniques.advisory) {
+    output += "\n#### Advisory Techniques\n\n";
+    output += formatTechniqueList(scTechniques.advisory);
+  }
+
+  if (scTechniques.failure) {
+    output += "\n#### Failures\n\n";
+    output += formatTechniqueList(scTechniques.failure);
+  }
+
+  return output;
+}
+
+function formatTechniqueList(list: any[]): string {
+  if (!list || list.length === 0) return "";
+  
+  return list.map(item => {
+    if (typeof item === 'string') {
+      return `- ${item}`;
+    }
+    
+    // Handle object techniques (situations, etc)
+    if (item.title) {
+      let text = `- **${item.title}**`;
+      if (item.techniques) {
+        text += "\n" + item.techniques.map((t: any) => {
+           if (typeof t === 'string') return `  - ${t}`;
+           if (t.id) return `  - ${t.id}`;
+           return `  - ${JSON.stringify(t)}`; // Fallback
+        }).join("\n");
+      }
+      return text;
+    }
+    
+    if (item.id) {
+        return `- ${item.id}`;
+    }
+    
+    return `- ${JSON.stringify(item)}`;
+  }).join("\n") + "\n";
+}
+
 async function main() {
   const ordered = await getOrderedScPaths();
   const withLevel = await Promise.all(
@@ -173,12 +236,13 @@ async function main() {
         { id: 'intent', title: 'Intent' },
         { id: 'benefits', title: 'Benefits' },
         { id: 'examples', title: 'Examples' },
-        { id: 'failures', title: 'Common failures' }, // Sometimes present
-        { id: 'resources', title: 'Resources' } // We exclude this, but check if we need to handle it specially
+        { id: 'failures', title: 'Common failures' }, 
+        { id: 'resources', title: 'Resources' },
+        { id: 'techniques', title: 'Techniques' }
       ];
 
       // Process specific sections we want
-      const desiredSections = ['brief', 'intent', 'benefits', 'examples', 'failures'];
+      const desiredSections = ['brief', 'intent', 'benefits', 'examples', 'failures', 'resources', 'techniques'];
       
       // Check for "Additional information" or other notes that might be top-level sections in some files
       // (Though usually they are inside Intent)
@@ -204,6 +268,14 @@ async function main() {
             lines.push(content);
             lines.push("");
           }
+        } else if (sectionId === 'techniques') {
+            // Handle techniques generation from data
+            const techniquesContent = formatTechniques(sc.id);
+            if (techniquesContent) {
+                lines.push(`### Techniques`);
+                lines.push(techniquesContent);
+                lines.push("");
+            }
         }
       }
 

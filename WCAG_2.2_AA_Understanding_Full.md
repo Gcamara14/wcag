@@ -288,6 +288,51 @@ Non-text content can take a number of forms, and this success criterion specifie
                The short text alternative describes the image and its interactive purpose:
                "Building floor plan. Select a room for more information."
 
+### Resources
+- [Excerpts from the NBA Tape Recording Manual, Third Edition](https://www.w3.org/2000/08/nba-manual/Overview.html)
+- [Inaccessibility of CAPTCHA](https://www.w3.org/TR/turingtest/)
+- [All That Malarkey: Accessible Alternatives](https://stuffandnonsense.co.uk/archives/accessible_alternatives.html)
+- [456 Berea Street: The Alt and Title Attributes](http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/)
+- [The Alt and Accessibility](http://green-beast.com/blog/?p=81)
+- [Better Connected, Better Results: Alt Text](http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If a short description can serve the same purpose and present the same information as the non-text content:**
+  - G94
+- **Situation B: If a short description can <strong>not</strong> serve the same purpose and present the same information as the non-text content (e.g., a chart or diagram):**
+  - G95
+- **Situation C: If non-text content is a control or accepts user input:**
+  - G82
+- **Situation D: If non-text content is time-based media (including live video-only and live audio-only); a test or exercise that would be invalid if presented in text; or primarily intended to create a specific sensory experience:**
+  - Providing a descriptive label
+  - G68
+  - G100
+- **Situation E: If non-text content is a CAPTCHA:**
+  - {"and":["G143","G144"]}
+- **Situation F: If the non-text content should be ignored by assistive technology:**
+  - Implementing or marking the non-text content so that it will be ignored by assistive technology
+
+#### Advisory Techniques
+
+- C18
+
+#### Failures
+
+- F3
+- F13
+- F20
+- F30
+- F38
+- F39
+- F65
+- F67
+- F71
+- F72
+
+
 ---
 
 ## 1.2.1 Audio-only and Video-only (Prerecorded)
@@ -377,6 +422,32 @@ See also
 
 **A video-only file with an audio track**
 : A silent movie includes an audio track which includes a description of the action in the video.
+
+### Resources
+- [Making Audio and Video Media Accessible, W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/media/av/)
+- [Overcoming the challenge of podcast transcription](http://www.rnib.org.uk/travel-downloads-podcasts-and-apps?List=be9c76d3-7ad0-4e03-a1a0-e6f6953b8178&ID=16)
+- [uiAccess list of transcription services](http://www.uiaccess.com/transcripts/transcript_services.html)
+- [Transcripts on the Web: Getting people to your podcasts and videos](http://www.uiaccess.com/transcripts/transcripts_on_the_web.html)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If the content is prerecorded audio-only:**
+  - G158
+- **Situation B: If the content is prerecorded video-only:**
+  - G159
+  - G166
+
+#### Advisory Techniques
+
+- H96
+
+#### Failures
+
+- F30
+- F67
+
 
 ---
 
@@ -484,6 +555,65 @@ From Sample Transcript Formatting by Whit Anderson.
 > 
 > 
 >
+
+### Resources
+##### Guides to Captioning
+
+         
+         
+
+- [Captions/Subtitles](https://www.w3.org/WAI/media/av/captions/), in [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/), W3C Web Accessibility Initiative (WAI)
+- [BBC: Subtitle Guidelines](https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/)
+- [Captioning Key: Guidelines and Preferred Techniques](https://dcmp.org/learn/captioningkey)
+- [Best Practices in Online Captioning](https://joeclark.org/access/captioning/bpoc/)
+
+         
+      
+
+      
+      
+
+         
+         
+
+##### SMIL Resources
+
+         
+         
+
+- [Synchronized Multimedia Integration Language (SMIL) 3.0](https://www.w3.org/TR/SMIL/)
+- [Accessibility Features of SMIL](https://www.w3.org/TR/SMIL-access/)
+
+         
+      
+
+      
+      
+
+         
+         
+
+##### Other Captioning Resources
+
+         
+         
+
+- [National Center for Accessible Media](https://www.wgbh.org/foundation/what-we-do/ncam)
+- [WebAIM: Captioning Resource List](https://webaim.org/techniques/captions/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G93
+- G87
+
+#### Failures
+
+- F8
+- F75
+- F74
+
 
 ---
 
@@ -618,6 +748,30 @@ Transcript of audio based on the first few minutes of "[Teaching Evolution Case 
                for time-based media that all employees, including those who cannot see the demonstrations,
                can use to better understand what is being presented.
 
+### Resources
+- [Making Audio and Video Media Accessible, W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/media/av/)
+- [GBH - Integrate audio descriptions into multimedia presentations using SMIL](https://www.wgbh.org/foundation/services/ncam/tools-resources/accessible-digital-media-guidelines-guideline-h-multimedia)
+- [Standard Techniques in Audio Description](http://joeclark.org/access/description/ad-principles.html)
+- [Synchronized Multimedia Integration Language (SMIL) 1.0](https://www.w3.org/TR/REC-smil/)
+- [Synchronized Multimedia Integration Language (SMIL 2.0)](https://www.w3.org/TR/SMIL/)
+- [Accessibility Features of SMIL](https://www.w3.org/TR/SMIL-access/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G69
+- **Linking to the alternative for time-based media**
+- G78
+- G173
+- G8
+- G203
+
+#### Advisory Techniques
+
+- H96
+
+
 ---
 
 ## 1.2.4 Captions (Live)
@@ -661,6 +815,18 @@ This success criterion was intended to apply to broadcast of synchronized media 
                of each real-time web performance. The CART service captures lyrics and dialog as
                well as identifies non-vocal music by title, movement, composer, and any information
                that will help the user comprehend the nature of the audio.
+
+### Resources
+- See 
+            [1.2.2: Captions (Prerecorded)](captions-prerecorded).
+
+### Techniques
+
+#### Sufficient Techniques
+
+- {"and":["G9","G93"]}
+- {"and":["G9","G87"],"using":["SM11","SM12","Using any readily available media format that has a video player that supports closed captioning"]}
+
 
 ---
 
@@ -749,6 +915,32 @@ The intent of this success criterion is to provide people who are blind or visua
             
 
 Transcript of audio based on the first few minutes of "[Teaching Evolution Case Studies, Bonnie Chen](http://www.pbs.org/wgbh/evolution/educators/teachstuds/tvideos.html)" (copyright WGBH and Clear Blue Sky Productions, Inc.)
+
+### Resources
+- [Description of Visual Information](https://www.w3.org/WAI/media/av/description/), in [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/), W3C Web Accessibility Initiative (WAI)
+- [GBH - Integrate audio descriptions into multimedia presentations using SMIL](https://www.wgbh.org/foundation/services/ncam/tools-resources/accessible-digital-media-guidelines-guideline-h-multimedia)
+- [Standard Techniques in Audio Description](http://joeclark.org/access/description/ad-principles.html)
+- [Synchronized Multimedia Integration Language (SMIL) 1.0](https://www.w3.org/TR/REC-smil/)
+- [Synchronized Multimedia Integration Language (SMIL 2.0)](https://www.w3.org/TR/SMIL/)
+- [Accessibility Features of SMIL](https://www.w3.org/TR/SMIL-access/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G78
+- G173
+- G8
+- G203
+
+#### Advisory Techniques
+
+- H96
+
+#### Failures
+
+- F113
+
 
 ---
 
@@ -889,6 +1081,54 @@ There may also be cases where it may be a judgment call as to whether the relati
                to indicate list items and other standard formatting conventions so that its structure
                can be programmatically determined.
 
+### Resources
+- [WebAIM: Semantic Structure](http://webaim.org/techniques/semanticstructure/)
+- [Heading Tags](http://accessibility.psu.edu/headingshtml/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: The technology provides semantic structure to make information and relationships conveyed through presentation programmatically determinable:**
+  - ARIA11
+  - H101
+  - ARIA12
+  - ARIA13
+  - ARIA16
+  - ARIA17
+  - ARIA20
+  - {"and":["G115","H49"]}
+  - G117
+  - G140
+  - ARIA24
+  - {"title":"Making information and relationships conveyed through presentation programmatically determinable","using":["G138","H51","PDF6","PDF20","H39","H63","H43","H44","H65","PDF10","PDF12","H71","H85","H48","H42","PDF9","PDF11","PDF17","PDF21","H97"],"usingQuantity":""}
+- **Situation B: The technology in use does NOT provide the semantic structure to make the information and relationships conveyed through presentation programmatically determinable:**
+  - G117
+  - {"title":"Making information and relationships conveyed through presentation programmatically determinable or available in text","using":["T1","T2","T3"],"usingQuantity":""}
+
+#### Advisory Techniques
+
+- C22
+- G162
+- ARIA1
+- ARIA2
+- G141
+
+#### Failures
+
+- F2
+- F33
+- F34
+- F42
+- F43
+- F46
+- F48
+- F90
+- F91
+- F92
+- F111
+
+
 ---
 
 ## 1.3.2 Meaningful Sequence
@@ -964,6 +1204,24 @@ For clarity:
 - **Example 2:** CSS is used to position a navigation bar, the main story on a page, and a side story.
             The visual presentation of the sections does not match the programmatically determined
             order, but the meaning of the page does not depend on the order of the sections.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G57
+- G57
+- C27
+- PDF3
+
+#### Failures
+
+- F34
+- F33
+- F32
+- F49
+- F1
+
 
 ---
 
@@ -1044,6 +1302,18 @@ WCAG was designed to apply only to controls that were displayed on a web page. T
                the instruction does not rely on these sensory characteristics since it also refers to
                the label, so it passes this criterion.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G96
+
+#### Failures
+
+- F14
+- F26
+
+
 ---
 
 ## 1.3.4 Orientation
@@ -1103,6 +1373,27 @@ The exception for things considered essential is aimed at situations where the c
 				An example where orientation is essential could be a banking app that requires the device be in landscape mode to easily and accurately capture an image of a check for deposit. These paper forms are typically about twice as wide as they are high.
 - **Example 5: Piano app**
 				An example where orientation is essential could be a piano app that requires the device to be in landscape mode, allowing the piano keys to have enough room to be functionally usable. Since a piano app is emulating a physical piano keyboard that needs to retain relative physical characteristics between keys, either too few keys would be available, or the keys would be much too narrow.
+
+### Resources
+- [Managing Screen Orientation](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
+- [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+- [Orientation Lock](https://css-tricks.com/snippets/css/orientation-lock/)
+- [Responsive Design for Landscape Orientation](https://css-tricks.com/forums/topic/responsive-design-for-landscape-orientation/)
+- [The Orientation Descriptor](https://www.w3.org/TR/css-device-adapt-1/#orientation-desc)
+- [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G214
+
+#### Failures
+
+- F97
+- F100
+
 
 ---
 
@@ -1175,6 +1466,20 @@ The term "input" is used here as a generic way to refer to form controls that ac
 
 **A contact form using icons**
 : A browser plugin to add icons inserts icons representing the person's name, home address, telephone number and email address to  identify the input purpose visually.
+
+### Resources
+- [COGA Gap Analysis Table 3: Entering Data, Error Prevention, & Recovery](https://www.w3.org/TR/coga-gap-analysis/#table3)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- H98
+
+#### Failures
+
+- F107
+
 
 ---
 
@@ -1338,6 +1643,39 @@ Examples of information conveyed by color differences: “required fields are re
                cannot perceive all the color differences can still understand the image by relying on
                the numbers.
 
+### Resources
+- [Vischeck](https://www.vischeck.com/)
+- [AWARE Color Laboratory](http://colorlab.wickline.org/colorblind/colorlab/)
+- [Wikipedia: Color vision deficiency](https://en.wikipedia.org/wiki/Color_vision_deficiency)
+- [Microsoft: Verify that a page is usable by people with color blindness](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-color-blindness)
+- [Causes and Incidence of Colorblindness](http://www.webexhibits.org/causesofcolor/2C.html)
+- [How to make figures and presentations that are friendly to Colorblind people](https://jfly.uni-koeln.de/color/)
+- [The Color Tutor application](https://colortutorial.design/tutor.html)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If the color of particular words, backgrounds, or other content is used to indicate information:**
+  - G14
+  - G205
+  - G182
+  - G183
+- **Situation B: If color is used within an image to convey information:**
+  - G111
+  - G14
+
+#### Advisory Techniques
+
+- C15
+
+#### Failures
+
+- F13
+- F73
+- F81
+
+
 ---
 
 ## 1.4.2 Audio Control
@@ -1400,6 +1738,20 @@ In the context of this success criterion, "plays automatically" broadly refers t
 ### Examples
 - An audio file begins playing automatically when a page is opened. However, the audio
             can be stopped by the user by selecting a "silent" link at the top of the page.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G60
+- G170
+- G171
+
+#### Failures
+
+- F23
+- F93
+
 
 ---
 
@@ -1714,6 +2066,46 @@ User Interface Components that are not available for user interaction (e.g., a d
             does not see the full range of colors. It also works for the rare individuals who
             see no color.
 
+### Resources
+- [Colour Contrast Analyser application](https://www.tpgi.com/color-contrast-checker/)
+- [Luminosity Colour Contrast Ratio Analyser](https://juicystudio.com/services/luminositycontrastratio.php)
+- [Colour Contrast Check](https://snook.ca/technical/colour_contrast/colour.html)
+- [Contrast Ratio Calculator](https://www.msfw.com/Services/ContrastRatioCalculator)
+- [Adobe Color - Color Contrast Analyzer Tool](https://color.adobe.com/create/color-contrast-analyzer)
+- [Atypical colour response](https://www.w3.org/Graphics/atypical-color-response)
+- [Colors On the Web Color Contrast Analyzer](http://www.colorsontheweb.com/colorcontrast.asp)
+- [Tool to convert images based on color loss](https://www.vischeck.com/daltonize/runDaltonize.php) so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)
+- [List of color contrast tools](https://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/)
+- [The American Printing House for the Blind Guidelines for Large Printing](https://www.aph.org/resources/large-print-guidelines/)
+- [National Library Service for the Blind and Physically Handicapped (NLS), The Library of Congress reference guide on large print materials](https://www.loc.gov/nls/resources/general-resources-on-disabilities/large-print-materials/)
+- [Types of Color Vision Deficiency, National Eye Institute (NEI), National Institutes of Health (NIH), U.S. Department of Health and Human Services (HHS)](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-vision-deficiency)
+- [Effects of chromatic and luminance contrast on reading, Knoblauch et al., 1991](https://doi.org/10.1364/JOSAA.8.000428)
+- [Achromatic luminance contrast sensitivity in X-linked color-deficient observers: an addition to the debate, Márta Janáky et al., 2013](https://pubmed.ncbi.nlm.nih.gov/24103453/)
+- [Contrast sensitivity of patients with congenital color vision deficiency, Cagri Ilhan et al., 2018](https://link.springer.com/article/10.1007/s10792-018-0881-7)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: text is less than 18 point if not bold and less than 14 point if bold**
+  - G18
+  - G148
+  - G174
+- **Situation B: text is at least 18 point if not bold and at least 14 point if bold**
+  - G145
+  - G148
+  - G174
+
+#### Advisory Techniques
+
+- G156
+
+#### Failures
+
+- F24
+- F83
+
+
 ---
 
 ## 1.4.4 Resize Text
@@ -1856,6 +2248,35 @@ See also
 - A user changes the scale of the content with the browser's full-page zoom function.
             All the content scales uniformly, and the browser provides scroll bars, if necessary.
 
+### Resources
+- [CSS 2 Box Model](https://www.w3.org/TR/CSS2/box.html)
+- [CSS 2 Visual formatting Model](https://www.w3.org/TR/CSS2/visuren.html)
+- [CSS 2 Visual formatting Model Details](https://www.w3.org/TR/CSS2/visudet.html)
+- [About fluid and fixed width layouts](http://www.456bereastreet.com/archive/200504/about_fluid_and_fixed_width_layouts/)
+- [Accessible CSS](http://cookiecrook.com/AIR/2003/train/accessiblecss.php)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G142
+- {"and":["Ensuring that text containers resize when the text resizes","using measurements that are relative to other measurements in the content"],"using":["C28",{"title":"Techniques for relative measurements","using":["C12","C13","C14"],"skipUsingPhrase":true},{"title":"Techniques for text container resizing","using":["SCR34","G146"],"skipUsingPhrase":true}],"usingPrefix":"by","usingQuantity":"one or more"}
+- G178
+- G179
+
+#### Advisory Techniques
+
+- C17
+- C20
+- C22
+
+#### Failures
+
+- F69
+- F80
+- F94
+
+
 ---
 
 ## 1.4.5 Images of Text
@@ -1984,6 +2405,28 @@ See also [1.4.9 Images of Text (No Exception)](images-of-text-no-exception).
             regular text to the calendar entry, so they post both the poster and the text contained in the image.
             This text is shown next to the poster image on the site's calendar page.
 
+### Resources
+- [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
+- [Web fonts (MDN)](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- C22
+- C30
+- G140
+- PDF7
+
+#### Advisory Techniques
+
+- C12
+- C13
+- C14
+- C8
+- C6
+
+
 ---
 
 ## 1.4.10 Reflow
@@ -2024,6 +2467,41 @@ A web page presents long strings of text which are truncated to save space. E.g.
               
 
 The presentation of text where the layout has specific meaning, such as code indentation for Python or "ascii art" as just two examples, would lose meaning if the layout were not presented correctly. This success criterion does not apply where that meaning would be lost. However, this is not the case for most other instances of text where text wrapping can be applied without loss of meaning. Additionally, for instances of indentation that convey meaning, consider reducing the size of the indentation at zoomed in levels. As the text will be bigger, the reduced indentation width can still be noticeable.
+
+### Resources
+- [Reading with Low Vision in a Digital Setting: by Wayne Dick, PhD.](https://www.google.com/url?q=https://docs.google.com/document/d/15ElCfY9VWzhPm3OSNofBe2x5Kt-nzt-TQFnZTcThV8o/edit&sa=D&source=docs&ust=1725541904107256&usg=AOvVaw0Y5vDE4bFZ6O1QbNOS094v)
+- [Operational Overhead Caused by Horizontal Scrolling Text](http://web.archive.org/web/20220121073555/http://nosetothepage.org/Fitz/2dScroll.html) by Wayne Dick, 2017. The study shows the impact of horizontal scrolling on reading effort
+- [Accessibility Requirements for People with Low Vision](https://www.w3.org/TR/low-vision-needs/). W3C First Public Working Draft 17 March 2016
+- [Responsive design resources](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive) from MDN web docs
+- [Responsive web design basics](https://developers.google.com/web/fundamentals/design-and-ux/responsive/) tutorial from Google
+
+### Techniques
+
+#### Sufficient Techniques
+
+- C32
+- C31
+- C33
+- C38
+- SCR34
+- G206
+- G224
+- G225
+- Using PDF/UA when creating PDFs (Potential future technique)
+
+#### Advisory Techniques
+
+- C34
+- C37
+- CSS, Reflowing simple data tables (Potential future technique)
+- CSS, Fitting data cells within the width of the viewport (Potential future technique)
+- Mechanism to allow mobile view at any time (Potential future technique)
+- Alternate view supporting Reflow for otherwise excepted content (Potential future technique)
+
+#### Failures
+
+- F102
+
 
 ---
 
@@ -2772,6 +3250,27 @@ The graphical objects are the circles (measured against the background) and the 
 
 There are many possible solutions to ensuring contrast, the example shows the use of borders. Other techniques are to use darker colors for the circle backgrounds, or to add text labels & values for each item.
 
+### Resources
+- [Accessibility Requirements for People with Low Vision](http://w3c.github.io/low-vision-a11y-tf/requirements.html).
+- [Smith Kettlewell Eye Research Institute](https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017May/0007.html) -  "If the text is better understood with the graphics, they should be equally visible as the text".
+- [Gordon Legge](https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017Jun/0054.html) - "Contrast requirements for form controls should be equivalent to contrast requirements for text".
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: Color is used to identify user interface components or used to identify user interface component states**
+  - G195
+  - G174
+- **Situation B: Color is required to understand graphical content**
+  - G207
+  - G209
+
+#### Failures
+
+- F78
+
+
 ---
 
 ## 1.4.12 Text Spacing
@@ -2885,6 +3384,100 @@ When spacing is being overridden to the SC's metrics:
 
 - Text fits within the bounds of its containing box without being cut off.
 - Text fits within the bounds of its containing box without overlapping other boxes.
+
+### Resources
+##### Research
+
+      
+
+The  grounds for this SC are [based on research](#resources). The metrics chosen as measures are based on the [McLeish](http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995) study. She ran from .04 to .25 em tests. McLeish found an increasing curve in reading speed of actual materials up to .25, but it  started to flatten at .20. Previous studies that reported no improvement started at .5em. Right at the flat point.  [Wayne E. Dick, Ph.D. analyzed the McLeish study](https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017Jun/0047.html) and translated from points. Dr. Dick recommended the metrics that the Working Group adopted.
+
+      
+
+        
+
+###### Languages and Scripts
+
+        
+
+Roughly 480 different languages and scripts [have been tested](https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2018Feb/0001.html).  Maximum spacing adjustments allowed by the SC were set on the following 3 pages:
+
+        
+
+- [Languages in their own writing systems](http://www.geonames.de/languages.html)
+- [Online Encyclopedia of writing systems and languages – language names](https://www.omniglot.com/language/names.htm)
+- [Universal Declaration of Human Rights](https://www.un.org/en/about-us/universal-declaration-of-human-rights)
+
+      
+
+      
+
+        
+
+###### Results
+
+        
+
+No adverse effects occurred. The following are the specific findings:
+
+        
+
+**Character Spacing**
+: Individual characters in words remained intact though they were spaced a bit further apart.
+
+**Word Spacing**
+: Words were spaced further apart. In languages that typically do not include spaces between words (e.g., Japanese), applying word spacing had no effect. This is expected.
+
+**Line Height**
+: Changing line height did not separate diacritics from characters, nor did it adversely impact ascenders or descenders.
+
+        
+
+As previously discussed, the ability to read text with adjusted spacing is a user responsibility. This is true no matter the language.
+
+        
+
+The SC's exception addresses cases where a text style property is not used in a language or script. In such cases, authors are only required to ensure relevant properties do not break the layout.
+
+      
+
+    
+
+    
+
+      
+
+##### Other references
+
+      
+
+- Allan, Kirkpatrick, Lawton Henry, Editors. (2017). [Accessibility Requirements for People with Low Vision (3.4 Spacing for Reading)](https://www.w3.org/TR/low-vision-needs/#spacing).  World Wide Web Consortium.
+- [Stylus Team](https://github.com/openstyles/stylus/graphs/contributors) (2012). [Stylus browser extension](https://github.com/openstyles/stylus/blob/master/README.md) (Firefox, Chrome, and Opera) (compatible with Userstyles.org material).
+- Campbell, Alastair.  (2017). [Text Adaptation Bookmarklet](https://github.com/alastc/adaptation-scripts/blob/master/scripts/text-adaptation.js). GitHub.
+- Chung, Susana T. L. (2012). [Dependence of Reading Speed on Letter Spacing in Central Vision Loss](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3429790/). Optom Vis Sci.
+- Chung, Susana T. L. (2002). [The Effect of Letter Spacing on Reading Speed in Central and Peripheral Vision (PDF)](http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995). IOVS ARVO Journals.
+- Mcleish, Eve. (2007).  [A study of the effect of letter spacing on the reading speed of young readers with low vision (PDF)](http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995). The British Journal of Visual Impairment 25.2: 133-43.
+- Rello, L., & Baeza-Yates, R. A. (2017). [ How to present more readable text for people with dyslexia](https://link.springer.com/article/10.1007/s10209-015-0438-8). Universal Access in the Information Society, 16(1), 29-49.
+- Sjoblom, A.M., Eaton, E. and Stagg, S.D., (2016). [The effects of letter spacing and coloured overlays on reading speed and accuracy in adult dyslexia](http://onlinelibrary.wiley.com/doi/10.1111/bjep.12127/full). British Journal of Educational Psychology, 86(4), pp. 630-639).
+- Zorzi,  Marco et, al. (2012). [Extra-large letter spacing improves reading in dyslexia](http://www.pnas.org/content/109/28/11455.full). Proceedings of the National Academy of Sciences.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- C36
+- C35
+
+#### Advisory Techniques
+
+- C8
+- C21
+- C28
+
+#### Failures
+
+- F104
+
 
 ---
 
@@ -3042,6 +3635,24 @@ The intent of this condition is to ensure users have adequate time to perceive t
 				
 				A button's tooltip is displayed directly below it on mouse hover which can easily be obscured by a large pointer.  The tooltip itself is able to be hovered so the mouse pointer can be moved down to its bottom edge in order to view the tooltip text.
 
+### Resources
+- [Tooltip design described in WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- SCR39
+- ARIA: Using role="tooltip" (Potential future technique)
+- CSS: Using hover and focus pseudo classes (Potential future technique)
+
+#### Failures
+
+- F95
+- Failure to make content dismissible without moving pointer hover or keyboard focus (Potential future technique)
+- Failure to meet by content on hover or focus not remaining visible until dismissed or invalid (Potential future technique)
+
+
 ---
 
 ## 2.1.1 Keyboard
@@ -3187,6 +3798,25 @@ It is assumed that the design of user input features takes into account that ope
                However, since keyboard users can submit the search by pressing Enter in the text input
                after typing their search terms, the form passes this success criterion.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G202
+- **Ensuring keyboard control**
+- G90
+
+#### Advisory Techniques
+
+- {"and":["Using WAI-ARIA role, state, and value attributes if repurposing static elements as interactive user interface components (future link)","SCR29"]}
+
+#### Failures
+
+- F54
+- F55
+- F42
+
+
 ---
 
 ## 2.1.2 No Keyboard Trap
@@ -3236,6 +3866,17 @@ There may be times when the functionality of the web page restricts the focus to
                inert and cannot receive focus (though, depending on implementation, the focus cycle
                might still include user agent controls).
                The dialog is dismissed by activating the Cancel button or the OK button.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G21
+
+#### Failures
+
+- F10
+
 
 ---
 
@@ -3325,6 +3966,34 @@ A mechanism is provided to allow users to disable character-key shortcuts. The c
         
 
 Keyboard-only users are in a long issues thread. While reading the thread they accidentally hit the S key, which moves focus to the search bar at the top of the document. This causes them to lose their place and train of thought. However, a mechanism is provided to allow users to change character-key shortcuts. They change the shortcut to include another key so they can avoid future interruptions.
+
+### Resources
+Web apps that use character-key shortcuts and allow users to disable and/or change these shortcuts:
+
+			
+
+- Gmail
+- WordPress
+
+			
+
+Videos of speech user trouble with single character key shortcuts:
+
+			
+
+- [Single character key shortcuts affecting speech input – example 1](https://www.youtube.com/watch?v=xzSyIA4OWYE)
+- [Single character key shortcuts affecting speech input – example 2](https://www.youtube.com/watch?v=OPjfpDU9S08)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G217
+
+#### Failures
+
+- F99
+
 
 ---
 
@@ -3477,6 +4146,30 @@ See also [2.2.3: No Timing](no-timing).
             seats, but warns the user when their time is almost out and allows the user to extend
             this time limit some number of times with a simple action such as clicking a "Extend
             time limit" button.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If there are session time limits:**
+  - G133
+  - G198
+- **Situation B: If a time limit is controlled by a script on the page:**
+  - G198
+  - G180
+  - {"and":["SCR16","SCR1"]}
+- **Situation C: If there are time limits on reading:**
+  - G4
+  - G198
+  - SCR33
+  - SCR36
+
+#### Failures
+
+- F40
+- F41
+- F58
+
 
 ---
 
@@ -3671,6 +4364,26 @@ It is important to note that the terms "blinking" and "flashing" can sometimes r
                for all users and because it is not presented in parallel with other content, no mechanism
                to pause, stop or hide it needs to be provided.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G4
+- SCR33
+- G11
+- G152
+- SCR22
+- G186
+- G191
+
+#### Failures
+
+- F16
+- F112
+- F50
+- F7
+
+
 ---
 
 ## 2.3.1 Three Flashes or Below Threshold
@@ -3835,6 +4548,22 @@ The combined area of flashes occurring concurrently and contiguously means the t
 - A movie with a scene involving very bright lightning flashes is edited so that the
             lightning only flashes three times in any one second period.
 
+### Resources
+- [Harding FPA Web Site](https://www.hardingfpa.com/)
+- [Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)](https://trace.umd.edu/peat/)
+- [Information about Photosensitive Seizure Disorders](https://trace.umd.edu/information-about-photosensitive-seizure-disorders/)
+- [Epilepsy Action](https://www.epilepsy.org.uk/)
+- [Epilepsy Foundation - Photosensitivity and Seizures](http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G19
+- G176
+- G15
+
+
 ---
 
 ## 2.4.1 Bypass Blocks
@@ -3944,6 +4673,23 @@ When this success criterion is not satisfied, it may be difficult for people wit
 - An e-commerce website includes a long list of filters prior to the search results listing. 
             A link above the list enables users to skip the filters and get to the product results quickly.
 
+### Resources
+- [WebAIM: Semantic Structure](http://webaim.org/techniques/semanticstructure/)
+- [Heading Tags](http://accessibility.psu.edu/headingshtml/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Creating links to skip blocks of repeated material**
+- **Grouping blocks of repeated material in a way that can be skipped**
+
+#### Advisory Techniques
+
+- C6
+- H97
+
+
 ---
 
 ## 2.4.2 Page Titled
@@ -4027,6 +4773,29 @@ In cases such as Single Page Applications (SPAs), where various distinct pages/v
                and perform transactions. The web application dynamically generates titles for each
                web page, e.g., "Bank XYZ, accounts for Alex Smith" "Bank XYZ, December 2005 statement
                for Account 1234-5678".
+
+### Resources
+- [<title>: The Document Title element: Usage notes (Accessibility)](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title#accessibility).
+- [Guidelines for Accessible and Usable Web Sites: Observing Users Who Work With Screen
+               Readers (PDF)
+            ](https://redish.net/wp-content/uploads/Theorfanos_Redish_InteractionsPaperAuthorsVer.pdf). Theofanos, M.F., and Redish, J. (2003).  Interactions, Volume X, Issue 6, November-December
+            2003, pages 38-51, 
+            [https://dl.acm.org/doi/10.1145/947226.947227](https://dl.acm.org/doi/10.1145/947226.947227)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- {"and":["G88","associating a title with a web page"],"using":["H25","PDF18"]}
+
+#### Advisory Techniques
+
+- G127
+
+#### Failures
+
+- F25
+
 
 ---
 
@@ -4207,6 +4976,20 @@ A company's website includes a form that collects marketing data and allows user
                moves from the name field to a checkbox, then to the street address, then to another
                checkbox.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G59
+- **Giving focus to elements in an order that follows sequences and relationships within the content**
+- **Changing a web page dynamically**
+
+#### Failures
+
+- F44
+- F85
+
+
 ---
 
 ## 2.4.4 Link Purpose (In Context)
@@ -4350,6 +5133,34 @@ See also
                to read the current paragraph provides the context to interpret the purpose of the
                link.
 
+### Resources
+- [Using Link Titles to Help Users Predict Where They Are Going](https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/)
+- [WebAIM Techniques for Hypertext Links](http://webaim.org/techniques/hypertext/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G91
+- H30
+- H24
+- **Allowing the user to choose short or long link text**
+- G53
+- **Providing a supplemental description of the purpose of a link**
+- **Identifying the purpose of a link using link text combined with programmatically determined link context**
+- {"and":["G91","semantically indicating links"],"using":["PDF11","PDF13"]}
+
+#### Advisory Techniques
+
+- H2
+- H80
+
+#### Failures
+
+- F63
+- F89
+
+
 ---
 
 ## 2.4.5 Multiple Ways
@@ -4411,6 +5222,17 @@ Even small sites should provide users some means of orientation. For a three or 
 **Where content is a result of a process or task - Search engine results**
 : A search engine provides the search results based on user input. There is no other
                way to locate the search results except to perform the search process itself.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- {"using":["G125","G64","G63","G161","G126","G185"],"usingConjunction":"Using","usingQuantity":"two or more"}
+
+#### Advisory Techniques
+
+- PDF2
+
 
 ---
 
@@ -4514,6 +5336,18 @@ This success criterion does not require the use of labels; however, it does requ
 : A search text input is followed by a button containing a magnifying glass icon that activates the search function. 
                The icon has the string "search" as programmatically determinable label.
 
+### Resources
+- [How Users Read on the Web](https://www.nngroup.com/articles/how-users-read-on-the-web/) A study showing that most users scan web pages rather than reading them word by word.
+- [Applying Writing Guidelines to Web Pages](https://www.nngroup.com/articles/applying-writing-guidelines-web-pages/) A report on the effects of making websites concise, easy to scan, and objective.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G130
+- G131
+
+
 ---
 
 ## 2.4.7 Focus Visible
@@ -4565,6 +5399,27 @@ Note that a keyboard focus indicator can take different forms. While Focus Visib
             the user can type over the text.
 - When a user interface control receives focus, a visible border is displayed around
             it.
+
+### Resources
+- [Styling form controls with CSS, revisited](http://www.456bereastreet.com/archive/200701/styling_form_controls_with_css_revisited/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G149
+- C15
+- G165
+- G195
+- C40
+- C45
+- SCR31
+
+#### Failures
+
+- F55
+- F78
+
 
 ---
 
@@ -4715,6 +5570,20 @@ A dialog-like overlay that does not take focus on appearance and does not either
 - A page has a full-width cookie approval dialog. The dialog is modal, preventing access to the other controls in the page until it has been dismissed. Focus is not obscured because the major portion of the cookie approval dialog remains on screen (until selections are made and submitted),  and so the major portion of the keyboard focus indicator remains visible.
 - A notification is implemented as a sticky header and the keyboard focus is moved to the notification so at least part of the focus indicator is in view. The notification disappears when it loses focus so it does not obscure any other controls, and part of the prior keyboard focus indicator is visible.
 
+### Resources
+- [Let's Focus on Slide-Out Navigation ](https://knowbility.org/blog/2020/accessible-slide-menus)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- C43
+
+#### Failures
+
+- F110
+
+
 ---
 
 ## 2.5.1 Pointer Gestures
@@ -4837,6 +5706,18 @@ This success criterion *does not apply* to gestures that involve dragging in any
 - A kanban widget with several vertical areas representing states in a defined process allows the user to right- or left-swipe elements to move them to an adjacent silo. The user can also accomplish this by selecting the element with a single tap or click, and then activating an arrow button to move the selected element.
 - A custom slider requires movement in a strict left/right direction when operated by dragging the thumb control. Buttons on both sides of the slider increment and decrement the selected value and update the thumb position.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G215
+- G216
+
+#### Failures
+
+- F105
+
+
 ---
 
 ## 2.5.2 Pointer Cancellation
@@ -4941,6 +5822,19 @@ Other examples where the timing of an activation is essential and requires the d
 ### Examples
 - For interface elements that have a single tap or long press as input, the corresponding event is triggered when the finger is lifted inside that element.
 - A drag-and-drop interface allows users to sort vertically stacked cards by picking up one card with the pointer (down-event), move it to a new position, and insert it at the new location when the pointer is released (up-event). Releasing the pointer outside the drop target area reverts the action, i.e., it moves the card back to the old position before the interaction started.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G210
+- G212
+- Touch events are only triggered when touch is removed from a control (Potential future technique)
+
+#### Failures
+
+- F101
+
 
 ---
 
@@ -5120,6 +6014,30 @@ However, where parenthetical information provides important context, such as ind
 - **Accessible name matches visible label:** The accessible name and visible label of a control match.
 - **Accessible name starts with visible label:** The accessible name "Search for a value" begins with the text of the visible label, "Search".
 
+### Resources
+- [Accessible Name and Description Computation](https://www.w3.org/TR/accname-aam-1.1/)
+- [Accessible Name and Description Computation in HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G208
+- G211
+
+#### Advisory Techniques
+
+- G162
+- If an icon has no accompanying text, consider using its hover text as its accessible name (Potential future technique)
+
+#### Failures
+
+- F96
+- F111
+- Accessible name contains the visible label text, but the words of the visible label are not in the same order as they are in the visible label text (Potential future technique)
+- Accessible name contains the visible label text, but one or more other words are interspersed in the label (Potential future technique)
+
+
 ---
 
 ## 2.5.4 Motion Actuation
@@ -5155,6 +6073,23 @@ There is an exception where motion is essential for the function or not using mo
 - A user can tilt a device to advance to the next or a previous page. Buttons are also provided to perform the same function.
 - A user can move or pan a device to change the view in an interactive photo. A control is also available to perform these same functions.
 - A user can gesture towards the device to navigate content. Controls are also available to navigate.
+
+### Resources
+- [Detecting device orientation](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
+- [DeviceMotionEvent](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G213
+- GXXX: Supporting system level features which allow the user to disable motion actuation
+
+#### Failures
+
+- F106
+- FXXX: Failure of Success Criterion 2.5.4 due to disrupting or disabling system level features which allow the user to disable motion actuation
+
 
 ---
 
@@ -5264,6 +6199,17 @@ Dragging movements covered in this success criterion are pointer interactions wh
 - A radial control widget (color wheel) where the value can be set by dragging the marker for the currently selected color to another position, also allows picking another color value by tapping or clicking on another place in the color wheel.
 - A linear slider control widget, where the value can be set by dragging the visual indicator (thumb) showing the current value, allows tapping or clicking on any point of the slider track to change the value and set the thumb to that position.
 - A widget where you can drag a gift to one person in a photo of a group of people also has a menu alternative where users can select the person that should receive the gift from the menu.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G219
+
+#### Failures
+
+- F108
+
 
 ---
 
@@ -5488,6 +6434,16 @@ Having targets with sufficient size - or at least sufficient target spacing - ca
 - A row of buttons, each of which has a horizontal width of more than 24 CSS pixels, a height of only 20 CSS pixels, and vertical margin of 4 CSS pixels above and below the row of buttons. Since there is sufficient spacing both above and below the row of buttons, the success criterion passes.
 - Links within a paragraph of text have varying target dimensions. Links within paragraphs of text do not need to meet the 24 by 24 CSS pixels requirements, so the success criterion passes.
 
+### Resources
+- [Target size study for one-handed thumb use on small touchscreen devices](https://dl.acm.org/doi/10.1145/1152215.1152260)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- C42
+
+
 ---
 
 ## 3.1.1 Language of Page
@@ -5549,6 +6505,23 @@ This success criterion helps:
 : A web page produced in Germany and written in HTML includes content in both German
                and English, but most of the content is in German. The default human language is identified
                as German (de) by the lang attribute on the html element.
+
+### Resources
+- [Internationalization Best Practices: Specifying Language in XHTML & HTML Content](https://www.w3.org/International/techniques/authoring-html#gslang)
+- [Declaring language in HTML](https://www.w3.org/International/questions/qa-html-language-declarations)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- H57
+- PDF16
+- PDF19
+
+#### Advisory Techniques
+
+- SVR5
+
 
 ---
 
@@ -5692,6 +6665,20 @@ This example assumes that the page's default content is in English. The link's `
 
          `<a title="Spanish" href="qa-html-language-declarations-es.html"><span lang="es">Español</span></a>`
 
+### Resources
+- [HTML - The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#attr-lang).
+- [Language tags in HTML and XML](https://www.w3.org/International/articles/language-tags/index.en).
+- [Authoring HTML: Language declarations](https://www.w3.org/TR/i18n-html-tech-lang/).
+- [Declaring language in HTML](https://www.w3.org/International/questions/qa-html-language-declarations)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- H58
+- PDF19
+
+
 ---
 
 ## 3.2.1 On Focus
@@ -5757,6 +6744,22 @@ Focus may be moved to a control either via the keyboard (e.g. tabbing to a contr
                options opens. As a keyboard user tabs through the web page, the dialog opens, moving
                the keyboard focus away from the control every time the user attempts to tab past
                the field.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G107
+
+#### Advisory Techniques
+
+- G200
+- G201
+
+#### Failures
+
+- F55
+
 
 ---
 
@@ -5845,6 +6848,24 @@ The intent of this success criterion is to ensure that entering data or selectin
             the phone number. This behavior of phone fields is described for the user at the beginning
             of the form.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G80
+- G13
+- SCR19
+
+#### Advisory Techniques
+
+- G201
+
+#### Failures
+
+- F36
+- F37
+
+
 ---
 
 ## 3.2.3 Consistent Navigation
@@ -5913,6 +6934,27 @@ Users may initiate a change in the order by using adaptive user agents or by set
 : Navigational content is consistently located at the end of each page in a set of web
                pages. A "skip to navigation" link is consistently located at the beginning of each
                page so that keyboard users can easily locate it when needed.
+
+### Resources
+- Detweiler, M.C. and Omanson, R.C. (1996), Ameritech Web Page User Interface Standards
+            and Design Guidelines.
+- [IBM: User experience design - Navigation](https://www.ibm.com/able/toolkit/design/ux/navigation/).
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G61
+
+#### Advisory Techniques
+
+- PDF14
+- PDF17
+
+#### Failures
+
+- F66
+
 
 ---
 
@@ -6016,6 +7058,17 @@ While it is desirable and best practice always to be consistent within a single 
 : Two buttons with the same functionality visually have the same text, but have been given
                   different `aria-label="..."` accessible names. For users of assistive technologies,
                   these two buttons will be announced differently and inconsistently.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- {"and":["G197","following the <a href=\"non-text-content#techniques\">sufficient techniques for Success Criterion 1.1.1</a> and <a href=\"name-role-value#techniques\">sufficient techniques for Success Criterion 4.1.2</a> for providing labels, names, and text alternatives"]}
+
+#### Failures
+
+- F31
+
 
 ---
 
@@ -6171,6 +7224,21 @@ When a user is quickly able to find help, they are able to complete the task eve
 - On-line job application: Some of the application questions may be hard for new job seekers to understand even after reading the contextual help. For example, the form may request their identification number, but they may have several and not know which one to enter. Consistently located contact information will enable them to use phone or email so they can get an answer to their question.
 - Medical appointment scheduling form: When the service a patient is trying to book is not easily findable within the interface, they may need human help. A consistently located messaging option (chat client) enables them to quickly interact with a staff person that can help, without requiring them to manage a second interface.
 - Finding a specific policy or procedure: An employee who needs to complete a work task may have difficulty locating the specific policy or procedure document on their employer's website. A consistently located "How Do I" page may include the information that enables them to independently complete this task.
+
+### Resources
+- [Cognitive Accessibility Gap Analysis Topic 6: Familiar Interface](https://www.w3.org/TR/coga-gap-analysis/#table6)
+- [Making Content Usable for People with Cognitive and Learning Disabilities 4.8.5 Make it Easy to Find Help and Give Feedback](https://www.w3.org/TR/coga-usable/#make-it-easy-to-find-help-and-give-feedback-pattern)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G220
+
+#### Failures
+
+- Inconsistent Help Location
+
 
 ---
 
@@ -6328,6 +7396,32 @@ As these problems relate to user agent behavior, developers will need to careful
                and providing a unique character to make it easy to search for the fields, the fields
                are highlighted in yellow to make it easier to visually search for them as well.
 
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If a form contains fields for which information from the user is mandatory.**
+  - G83
+  - ARIA21
+  - SCR18
+  - PDF5
+- **Situation B: If information provided by the user is required to be in a specific data format or of certain values.**
+  - ARIA18
+  - ARIA19
+  - ARIA21
+  - G84
+  - G85
+  - SCR18
+  - SCR32
+  - PDF22
+
+#### Advisory Techniques
+
+- G139
+- G199
+- ARIA2
+
+
 ---
 
 ## 3.3.2 Labels or Instructions
@@ -6440,6 +7534,26 @@ The use of "requires" in this criterion's normative wording does not mean that t
             of the three fields. The value of this attribute for the three fields are, respectively,
             "Area Code", "Exchange", and "Number".
 
+### Techniques
+
+#### Sufficient Techniques
+
+- G131
+- H44
+- PDF10
+- H71
+- G167
+
+#### Advisory Techniques
+
+- G13
+- ARIA2
+
+#### Failures
+
+- F82
+
+
 ---
 
 ## 3.3.3 Error Suggestion
@@ -6504,6 +7618,29 @@ The content author may provide the description of the error, or the user agent m
                   May, June, July, August, September, October, November, December."
 - The conversion of the input data interpreted as a different month format, e.g., "Do
                   you mean 'December'?"
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If information for a field is required to be in a specific data format:**
+  - ARIA18
+  - G85
+  - G177
+  - PDF22
+- **Situation B: Information provided by the user is required to be one of a limited set of values:**
+  - ARIA18
+  - G84
+  - G177
+  - PDF22
+
+#### Advisory Techniques
+
+- G139
+- G199
+- SCR18
+- SCR32
+
 
 ---
 
@@ -6572,6 +7709,28 @@ User-controllable data is user-viewable data that the user can change and/or del
                is open. If it is after hours, the user is alerted that the transaction will be an
                after-hours transaction, is told about the risks of trading outside of regular market
                hours, and given the opportunity to cancel or confirm the order.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If an application causes a legal transaction to occur, such as making a purchase or submitting an income tax return:**
+  - G164
+  - G98
+  - G155
+- **Situation B: If an action causes information to be deleted:**
+  - G99
+  - G168
+  - G155
+- **Situation C: If the web page includes a testing application**
+  - G98
+  - G168
+
+#### Advisory Techniques
+
+- SCR18
+- G199
+
 
 ---
 
@@ -6656,6 +7815,18 @@ There are exceptions for:
 - A form on an e-commerce website allows the user to confirm that the billing address and delivery address are the same address.
 - A user submits a checkout form with an incorrect credit card number in it. The page updates, showing an error message. Submitted information, such as credit card number, is not cleared from the form.
 - A search results page pre-fills the search input with the previously entered search term in the same process.
+
+### Resources
+- [Cognitive Accessibility Gap Analysis Topic 3: Entering Data, Error Prevention, & Recovery](https://www.w3.org/TR/coga-gap-analysis/#table3)
+- [Making Content Usable for People with Cognitive and Learning Disabilities 4.5.4 Design Forms to Prevent Mistakes](https://www.w3.org/TR/coga-usable/#design-forms-to-prevent-mistakes-pattern)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G221
+- Not requesting the same information twice (Potential future technique)
+
 
 ---
 
@@ -6849,6 +8020,32 @@ The examples of this success criterion are the same as the [Accessible Authentic
 - A website that requires two-factor authentication displays a QR code which can be scanned by an app on a user's device to confirm identity.
 - A website that requires two-factor authentication sends a notification to a user's device. The user must use their device's authentication mechanism (for example, user-defined PIN, fingerprint, facial recognition) to confirm identity.
 
+### Resources
+- [Cognitive Accessibility Gap Analysis Topic 1: Authentication and Safety](https://www.w3.org/TR/coga-gap-analysis/#table1)
+- [Cognitive Accessibility Issue Papers 4. Web Security and Privacy Technologies](https://w3c.github.io/coga/issue-papers/#web-security-and-privacy-technologies) and [Web Security and Privacy Technologies](https://w3c.github.io/coga/issue-papers/privacy-security.html)
+- [Making Content Usable for People with Cognitive and Learning Disabilities 4.7.1 Provide a Login that Does Not Rely on Memory or Other Cognitive Skills](https://www.w3.org/TR/coga-usable/#provide-a-login-that-does-not-rely-on-memory-or-other-cognitive-skills-pattern)
+- [WebAuthN specification](https://www.w3.org/TR/webauthn/)
+- [WebAuthN Demo site](https://webauthn.io/)
+- [Web Authentication API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API)
+- [OAuth on Wikipedia](https://en.wikipedia.org/wiki/OAuth)
+- ["Let them paste passwords", from the UK's National Cyber Security Centre (archived)](https://webarchive.nationalarchives.gov.uk/ukgwa/20240306114738/https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords)
+- [NIST SP 800-63 Digital Identity Guidelines (Second Public Draft of Revision 4) / SP 800-63B Authentication & Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- G218
+- H100
+- Providing WebAuthn as an alternative to username/password (Potential future technique)
+- Providing a third-party login using OAuth (Potential future technique)
+- Using two techniques to provide two-factor authentication (Potential future technique)
+
+#### Failures
+
+- F109
+
+
 ---
 
 ## 4.1.2 Name, Role, Value
@@ -6918,6 +8115,40 @@ A particularly important state of a user interface control is whether or not it 
 ### Examples
 **Accessible APIs**
 : A Java applet uses the accessibility API defined by the language.
+
+### Resources
+- [Web Accessibility Initiative - Accessible Rich Internet Applications (ARIA)](https://www.w3.org/TR/wai-aria/)
+- [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+- [Accessible Name and Description Computation 1.2](https://www.w3.org/TR/accname-1.2/)
+- [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If using a standard user interface component in a markup language (e.g., HTML):**
+  - ARIA14
+  - ARIA16
+  - G108
+- **Situation B: If using script or code to re-purpose a standard user interface component in a markup language:**
+  - {"title":"Exposing the names and roles, allowing user-settable properties to be directly set, and providing notification of changes","using":["ARIA16"]}
+- **Situation C: If using a standard user interface component in a programming technology:**
+  - G135
+- **Situation D: If creating your own user interface component in a programming language:**
+  - G10
+
+#### Failures
+
+- F59
+- F15
+- F20
+- F42
+- F68
+- F79
+- F86
+- F89
+- F111
+
 
 ---
 
@@ -7087,5 +8318,33 @@ Creating a status message about these questions being added, or notifying the us
 Live regions and alerts can be usefully applied in many situations where a change of content takes place which does not constitute a status message, as defined in this success criterion. However, there is a risk of making an application too "chatty" for a screen reader user. User testing should be carried out to ensure the appropriate level of feedback is achieved. The Advisory Techniques provide examples of how alerts or live regions can enhance the user experience.
 
 The purpose of this success criterion is not to force authors to generate new status messages. Its intent is to ensure that when status messages *are* displayed, they are programmatically identified in a way that allows assistive technologies to present them to the user.
+
+### Techniques
+
+#### Sufficient Techniques
+
+- **Situation A: If a status message advises on the success or results of an action, or the state of an application:**
+  - ARIA22
+- **Situation B: If a status message conveys a suggestion, or a warning on the existence of an error:**
+  - ARIA19
+- **Situation C: If a status message conveys information on the progress of a process:**
+  - ARIA23
+  - Using <code>role="progressbar"</code> (future link)
+  - {"and":["ARIA22","G193"],"andConjunction":"in combination with"}
+
+#### Advisory Techniques
+
+- Using aria-live regions with chat clients (future link)
+- Using aria-live regions to support <a href="content-on-hover-or-focus">1.4.13 Content on Hover or Focus</a> (future link)
+- Using <code>role="marquee"</code> (future link)
+- Using <code>role="timer"</code> (future link)
+- ARIA18
+- SCR14
+
+#### Failures
+
+- F103
+- Using <code>role="alert"</code> or <code>aria-live="assertive"</code> on content which is not important and time-sensitive (future link)
+
 
 ---
