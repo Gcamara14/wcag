@@ -213,16 +213,32 @@ async function main() {
   );
   const scList = withLevel.filter((sc) => sc.level === "A" || sc.level === "AA");
 
+  /** GitHub-style anchor from heading text for TOC links. */
+  function headingAnchor(num: string, name: string, level: string): string {
+    const raw = `${num} ${name} (${level})`;
+    return raw
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, (c) => (c === "." ? "" : ""));
+  }
+
   const lines: string[] = [
     "# Understanding WCAG 2.2 AA",
     "",
     "This document contains the full Understanding WCAG guidance and is intended to be used by a custom GPT to explain intent, edge cases, and rationale behind WCAG 2.2 AA success criteria.",
     "",
+    "## Table of Contents",
+    "",
+    ...scList.map(
+      (sc) =>
+        `- [${sc.num} ${sc.name} (${sc.level})](#${headingAnchor(sc.num, sc.name, sc.level)})`
+    ),
+    "",
   ];
 
   for (const sc of scList) {
     console.log(`Processing ${sc.num} ${sc.name}...`);
-    lines.push(`## ${sc.num} ${sc.name}`);
+    lines.push(`## ${sc.num} ${sc.name} (${sc.level})`);
     lines.push("");
 
     try {

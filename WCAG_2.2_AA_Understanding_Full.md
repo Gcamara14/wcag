@@ -2,7 +2,65 @@
 
 This document contains the full Understanding WCAG guidance and is intended to be used by a custom GPT to explain intent, edge cases, and rationale behind WCAG 2.2 AA success criteria.
 
-## 1.1.1 Non-text Content
+## Table of Contents
+
+- [1.1.1 Non-text Content (A)](#111-non-text-content-a)
+- [1.2.1 Audio-only and Video-only (Prerecorded) (A)](#121-audio-only-and-video-only-prerecorded-a)
+- [1.2.2 Captions (Prerecorded) (A)](#122-captions-prerecorded-a)
+- [1.2.3 Audio Description or Media Alternative (Prerecorded) (A)](#123-audio-description-or-media-alternative-prerecorded-a)
+- [1.2.4 Captions (Live) (AA)](#124-captions-live-aa)
+- [1.2.5 Audio Description (Prerecorded) (AA)](#125-audio-description-prerecorded-aa)
+- [1.3.1 Info and Relationships (A)](#131-info-and-relationships-a)
+- [1.3.2 Meaningful Sequence (A)](#132-meaningful-sequence-a)
+- [1.3.3 Sensory Characteristics (A)](#133-sensory-characteristics-a)
+- [1.3.4 Orientation (AA)](#134-orientation-aa)
+- [1.3.5 Identify Input Purpose (AA)](#135-identify-input-purpose-aa)
+- [1.4.1 Use of Color (A)](#141-use-of-color-a)
+- [1.4.2 Audio Control (A)](#142-audio-control-a)
+- [1.4.3 Contrast (Minimum) (AA)](#143-contrast-minimum-aa)
+- [1.4.4 Resize Text (AA)](#144-resize-text-aa)
+- [1.4.5 Images of Text (AA)](#145-images-of-text-aa)
+- [1.4.10 Reflow (AA)](#1410-reflow-aa)
+- [1.4.11 Non-text Contrast (AA)](#1411-non-text-contrast-aa)
+- [1.4.12 Text Spacing (AA)](#1412-text-spacing-aa)
+- [1.4.13 Content on Hover or Focus (AA)](#1413-content-on-hover-or-focus-aa)
+- [2.1.1 Keyboard (A)](#211-keyboard-a)
+- [2.1.2 No Keyboard Trap (A)](#212-no-keyboard-trap-a)
+- [2.1.4 Character Key Shortcuts (A)](#214-character-key-shortcuts-a)
+- [2.2.1 Timing Adjustable (A)](#221-timing-adjustable-a)
+- [2.2.2 Pause, Stop, Hide (A)](#222-pause-stop-hide-a)
+- [2.3.1 Three Flashes or Below Threshold (A)](#231-three-flashes-or-below-threshold-a)
+- [2.4.1 Bypass Blocks (A)](#241-bypass-blocks-a)
+- [2.4.2 Page Titled (A)](#242-page-titled-a)
+- [2.4.3 Focus Order (A)](#243-focus-order-a)
+- [2.4.4 Link Purpose (In Context) (A)](#244-link-purpose-in-context-a)
+- [2.4.5 Multiple Ways (AA)](#245-multiple-ways-aa)
+- [2.4.6 Headings and Labels (AA)](#246-headings-and-labels-aa)
+- [2.4.7 Focus Visible (AA)](#247-focus-visible-aa)
+- [2.4.11 Focus Not Obscured (Minimum) (AA)](#2411-focus-not-obscured-minimum-aa)
+- [2.5.1 Pointer Gestures (A)](#251-pointer-gestures-a)
+- [2.5.2 Pointer Cancellation (A)](#252-pointer-cancellation-a)
+- [2.5.3 Label in Name (A)](#253-label-in-name-a)
+- [2.5.4 Motion Actuation (A)](#254-motion-actuation-a)
+- [2.5.7 Dragging Movements (AA)](#257-dragging-movements-aa)
+- [2.5.8 Target Size (Minimum) (AA)](#258-target-size-minimum-aa)
+- [3.1.1 Language of Page (A)](#311-language-of-page-a)
+- [3.1.2 Language of Parts (AA)](#312-language-of-parts-aa)
+- [3.2.1 On Focus (A)](#321-on-focus-a)
+- [3.2.2 On Input (A)](#322-on-input-a)
+- [3.2.3 Consistent Navigation (AA)](#323-consistent-navigation-aa)
+- [3.2.4 Consistent Identification (AA)](#324-consistent-identification-aa)
+- [3.2.6 Consistent Help (A)](#326-consistent-help-a)
+- [3.3.1 Error Identification (A)](#331-error-identification-a)
+- [3.3.2 Labels or Instructions (A)](#332-labels-or-instructions-a)
+- [3.3.3 Error Suggestion (AA)](#333-error-suggestion-aa)
+- [3.3.4 Error Prevention (Legal, Financial, Data) (AA)](#334-error-prevention-legal-financial-data-aa)
+- [3.3.7 Redundant Entry (A)](#337-redundant-entry-a)
+- [3.3.8 Accessible Authentication (Minimum) (AA)](#338-accessible-authentication-minimum-aa)
+- [4.1.2 Name, Role, Value (A)](#412-name-role-value-a)
+- [4.1.3 Status Messages (AA)](#413-status-messages-aa)
+
+## 1.1.1 Non-text Content (A)
 
 ### In brief
 **Goal**
@@ -335,7 +393,7 @@ Non-text content can take a number of forms, and this success criterion specifie
 
 ---
 
-## 1.2.1 Audio-only and Video-only (Prerecorded)
+## 1.2.1 Audio-only and Video-only (Prerecorded) (A)
 
 ### In brief
 **Goal**
@@ -451,7 +509,7 @@ See also
 
 ---
 
-## 1.2.2 Captions (Prerecorded)
+## 1.2.2 Captions (Prerecorded) (A)
 
 ### In brief
 **Goal**
@@ -617,7 +675,7 @@ From Sample Transcript Formatting by Whit Anderson.
 
 ---
 
-## 1.2.3 Audio Description or Media Alternative (Prerecorded)
+## 1.2.3 Audio Description or Media Alternative (Prerecorded) (A)
 
 ### In brief
 **Goal**
@@ -774,7 +832,7 @@ Transcript of audio based on the first few minutes of "[Teaching Evolution Case 
 
 ---
 
-## 1.2.4 Captions (Live)
+## 1.2.4 Captions (Live) (AA)
 
 ### In brief
 **Goal**
@@ -830,7 +888,7 @@ This success criterion was intended to apply to broadcast of synchronized media 
 
 ---
 
-## 1.2.5 Audio Description (Prerecorded)
+## 1.2.5 Audio Description (Prerecorded) (AA)
 
 ### In brief
 **Goal**
@@ -944,7 +1002,7 @@ Transcript of audio based on the first few minutes of "[Teaching Evolution Case 
 
 ---
 
-## 1.3.1 Info and Relationships
+## 1.3.1 Info and Relationships (A)
 
 ### In brief
 **Goal**
@@ -1131,7 +1189,7 @@ There may also be cases where it may be a judgment call as to whether the relati
 
 ---
 
-## 1.3.2 Meaningful Sequence
+## 1.3.2 Meaningful Sequence (A)
 
 ### In brief
 **Goal**
@@ -1225,7 +1283,7 @@ For clarity:
 
 ---
 
-## 1.3.3 Sensory Characteristics
+## 1.3.3 Sensory Characteristics (A)
 
 ### In brief
 **Goal**
@@ -1316,7 +1374,7 @@ WCAG was designed to apply only to controls that were displayed on a web page. T
 
 ---
 
-## 1.3.4 Orientation
+## 1.3.4 Orientation (AA)
 
 ### In brief
 **Goal**
@@ -1397,7 +1455,7 @@ The exception for things considered essential is aimed at situations where the c
 
 ---
 
-## 1.3.5 Identify Input Purpose
+## 1.3.5 Identify Input Purpose (AA)
 
 ### In brief
 **Goal**
@@ -1483,7 +1541,7 @@ The term "input" is used here as a generic way to refer to form controls that ac
 
 ---
 
-## 1.4.1 Use of Color
+## 1.4.1 Use of Color (A)
 
 ### In brief
 **Goal**
@@ -1678,7 +1736,7 @@ Examples of information conveyed by color differences: “required fields are re
 
 ---
 
-## 1.4.2 Audio Control
+## 1.4.2 Audio Control (A)
 
 ### In brief
 **Goal**
@@ -1755,7 +1813,7 @@ In the context of this success criterion, "plays automatically" broadly refers t
 
 ---
 
-## 1.4.3 Contrast (Minimum)
+## 1.4.3 Contrast (Minimum) (AA)
 
 ### In brief
 **Goal**
@@ -2108,7 +2166,7 @@ User Interface Components that are not available for user interaction (e.g., a d
 
 ---
 
-## 1.4.4 Resize Text
+## 1.4.4 Resize Text (AA)
 
 ### In brief
 **Goal**
@@ -2279,7 +2337,7 @@ See also
 
 ---
 
-## 1.4.5 Images of Text
+## 1.4.5 Images of Text (AA)
 
 ### In brief
 **Goal**
@@ -2429,7 +2487,7 @@ See also [1.4.9 Images of Text (No Exception)](images-of-text-no-exception).
 
 ---
 
-## 1.4.10 Reflow
+## 1.4.10 Reflow (AA)
 
 ### In brief
 **Goal**
@@ -2505,7 +2563,7 @@ The presentation of text where the layout has specific meaning, such as code ind
 
 ---
 
-## 1.4.11 Non-text Contrast
+## 1.4.11 Non-text Contrast (AA)
 
 ### In brief
 **Goal**
@@ -3273,7 +3331,7 @@ There are many possible solutions to ensuring contrast, the example shows the us
 
 ---
 
-## 1.4.12 Text Spacing
+## 1.4.12 Text Spacing (AA)
 
 ### In brief
 **Goal**
@@ -3481,7 +3539,7 @@ The SC's exception addresses cases where a text style property is not used in a 
 
 ---
 
-## 1.4.13 Content on Hover or Focus
+## 1.4.13 Content on Hover or Focus (AA)
 
 ### In brief
 **Goal**
@@ -3655,7 +3713,7 @@ The intent of this condition is to ensure users have adequate time to perceive t
 
 ---
 
-## 2.1.1 Keyboard
+## 2.1.1 Keyboard (A)
 
 ### In brief
 **Goal**
@@ -3819,7 +3877,7 @@ It is assumed that the design of user input features takes into account that ope
 
 ---
 
-## 2.1.2 No Keyboard Trap
+## 2.1.2 No Keyboard Trap (A)
 
 ### In brief
 **Goal**
@@ -3880,7 +3938,7 @@ There may be times when the functionality of the web page restricts the focus to
 
 ---
 
-## 2.1.4 Character Key Shortcuts
+## 2.1.4 Character Key Shortcuts (A)
 
 ### In brief
 **Goal**
@@ -3997,7 +4055,7 @@ Videos of speech user trouble with single character key shortcuts:
 
 ---
 
-## 2.2.1 Timing Adjustable
+## 2.2.1 Timing Adjustable (A)
 
 ### In brief
 **Goal**
@@ -4173,7 +4231,7 @@ See also [2.2.3: No Timing](no-timing).
 
 ---
 
-## 2.2.2 Pause, Stop, Hide
+## 2.2.2 Pause, Stop, Hide (A)
 
 ### In brief
 **Goal**
@@ -4386,7 +4444,7 @@ It is important to note that the terms "blinking" and "flashing" can sometimes r
 
 ---
 
-## 2.3.1 Three Flashes or Below Threshold
+## 2.3.1 Three Flashes or Below Threshold (A)
 
 ### In brief
 **Goal**
@@ -4566,7 +4624,7 @@ The combined area of flashes occurring concurrently and contiguously means the t
 
 ---
 
-## 2.4.1 Bypass Blocks
+## 2.4.1 Bypass Blocks (A)
 
 ### In brief
 **Goal**
@@ -4692,7 +4750,7 @@ When this success criterion is not satisfied, it may be difficult for people wit
 
 ---
 
-## 2.4.2 Page Titled
+## 2.4.2 Page Titled (A)
 
 ### In brief
 **Goal**
@@ -4799,7 +4857,7 @@ In cases such as Single Page Applications (SPAs), where various distinct pages/v
 
 ---
 
-## 2.4.3 Focus Order
+## 2.4.3 Focus Order (A)
 
 ### In brief
 **Goal**
@@ -4992,7 +5050,7 @@ A company's website includes a form that collects marketing data and allows user
 
 ---
 
-## 2.4.4 Link Purpose (In Context)
+## 2.4.4 Link Purpose (In Context) (A)
 
 ### In brief
 **Goal**
@@ -5163,7 +5221,7 @@ See also
 
 ---
 
-## 2.4.5 Multiple Ways
+## 2.4.5 Multiple Ways (AA)
 
 ### In brief
 **Goal**
@@ -5236,7 +5294,7 @@ Even small sites should provide users some means of orientation. For a three or 
 
 ---
 
-## 2.4.6 Headings and Labels
+## 2.4.6 Headings and Labels (AA)
 
 ### In brief
 **Goal**
@@ -5350,7 +5408,7 @@ This success criterion does not require the use of labels; however, it does requ
 
 ---
 
-## 2.4.7 Focus Visible
+## 2.4.7 Focus Visible (AA)
 
 ### In brief
 **Goal**
@@ -5423,7 +5481,7 @@ Note that a keyboard focus indicator can take different forms. While Focus Visib
 
 ---
 
-## 2.4.11 Focus Not Obscured (Minimum)
+## 2.4.11 Focus Not Obscured (Minimum) (AA)
 
 ### In brief
 **Goal**
@@ -5586,7 +5644,7 @@ A dialog-like overlay that does not take focus on appearance and does not either
 
 ---
 
-## 2.5.1 Pointer Gestures
+## 2.5.1 Pointer Gestures (A)
 
 ### In brief
 **Goal**
@@ -5720,7 +5778,7 @@ This success criterion *does not apply* to gestures that involve dragging in any
 
 ---
 
-## 2.5.2 Pointer Cancellation
+## 2.5.2 Pointer Cancellation (A)
 
 ### In brief
 **Goal**
@@ -5838,7 +5896,7 @@ Other examples where the timing of an activation is essential and requires the d
 
 ---
 
-## 2.5.3 Label in Name
+## 2.5.3 Label in Name (A)
 
 ### In brief
 **Goal**
@@ -6040,7 +6098,7 @@ However, where parenthetical information provides important context, such as ind
 
 ---
 
-## 2.5.4 Motion Actuation
+## 2.5.4 Motion Actuation (A)
 
 ### In brief
 **Goal**
@@ -6093,7 +6151,7 @@ There is an exception where motion is essential for the function or not using mo
 
 ---
 
-## 2.5.7 Dragging Movements
+## 2.5.7 Dragging Movements (AA)
 
 ### In brief
 **Goal**
@@ -6213,7 +6271,7 @@ Dragging movements covered in this success criterion are pointer interactions wh
 
 ---
 
-## 2.5.8 Target Size (Minimum)
+## 2.5.8 Target Size (Minimum) (AA)
 
 ### In brief
 **Goal**
@@ -6446,7 +6504,7 @@ Having targets with sufficient size - or at least sufficient target spacing - ca
 
 ---
 
-## 3.1.1 Language of Page
+## 3.1.1 Language of Page (A)
 
 ### In brief
 **Goal**
@@ -6525,7 +6583,7 @@ This success criterion helps:
 
 ---
 
-## 3.1.2 Language of Parts
+## 3.1.2 Language of Parts (AA)
 
 ### In brief
 **Goal**
@@ -6681,7 +6739,7 @@ This example assumes that the page's default content is in English. The link's `
 
 ---
 
-## 3.2.1 On Focus
+## 3.2.1 On Focus (A)
 
 ### In brief
 **Goal**
@@ -6763,7 +6821,7 @@ Focus may be moved to a control either via the keyboard (e.g. tabbing to a contr
 
 ---
 
-## 3.2.2 On Input
+## 3.2.2 On Input (A)
 
 ### In brief
 **Goal**
@@ -6868,7 +6926,7 @@ The intent of this success criterion is to ensure that entering data or selectin
 
 ---
 
-## 3.2.3 Consistent Navigation
+## 3.2.3 Consistent Navigation (AA)
 
 ### In brief
 **Goal**
@@ -6958,7 +7016,7 @@ Users may initiate a change in the order by using adaptive user agents or by set
 
 ---
 
-## 3.2.4 Consistent Identification
+## 3.2.4 Consistent Identification (AA)
 
 ### In brief
 **Goal**
@@ -7072,7 +7130,7 @@ While it is desirable and best practice always to be consistent within a single 
 
 ---
 
-## 3.2.6 Consistent Help
+## 3.2.6 Consistent Help (A)
 
 ### In brief
 **Goal**
@@ -7242,7 +7300,7 @@ When a user is quickly able to find help, they are able to complete the task eve
 
 ---
 
-## 3.3.1 Error Identification
+## 3.3.1 Error Identification (A)
 
 ### In brief
 **Goal**
@@ -7424,7 +7482,7 @@ As these problems relate to user agent behavior, developers will need to careful
 
 ---
 
-## 3.3.2 Labels or Instructions
+## 3.3.2 Labels or Instructions (A)
 
 ### In brief
 **Goal**
@@ -7556,7 +7614,7 @@ The use of "requires" in this criterion's normative wording does not mean that t
 
 ---
 
-## 3.3.3 Error Suggestion
+## 3.3.3 Error Suggestion (AA)
 
 ### In brief
 **Goal**
@@ -7644,7 +7702,7 @@ The content author may provide the description of the error, or the user agent m
 
 ---
 
-## 3.3.4 Error Prevention (Legal, Financial, Data)
+## 3.3.4 Error Prevention (Legal, Financial, Data) (AA)
 
 ### In brief
 **Goal**
@@ -7734,7 +7792,7 @@ User-controllable data is user-viewable data that the user can change and/or del
 
 ---
 
-## 3.3.7 Redundant Entry
+## 3.3.7 Redundant Entry (A)
 
 ### In brief
 **Goal**
@@ -7830,7 +7888,7 @@ There are exceptions for:
 
 ---
 
-## 3.3.8 Accessible Authentication (Minimum)
+## 3.3.8 Accessible Authentication (Minimum) (AA)
 
 ### In brief
 **Goal**
@@ -8048,7 +8106,7 @@ The examples of this success criterion are the same as the [Accessible Authentic
 
 ---
 
-## 4.1.2 Name, Role, Value
+## 4.1.2 Name, Role, Value (A)
 
 ### In brief
 **Goal**
@@ -8152,7 +8210,7 @@ A particularly important state of a user interface control is whether or not it 
 
 ---
 
-## 4.1.3 Status Messages
+## 4.1.3 Status Messages (AA)
 
 ### In brief
 **Goal**
